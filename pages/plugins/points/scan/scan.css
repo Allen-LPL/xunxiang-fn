@@ -16,20 +16,17 @@
     text-align: center;
 }
 .ex-hero-title {
-    font-size: 56rpx;
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
+    font-size: 44rpx;
     font-weight: 700;
     letter-spacing: 8rpx;
-    background: #b99359;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
+    color: #1a1a1a;
 }
 .ex-hero-underline {
     width: 156rpx;
     height: 6rpx;
     margin: 14rpx auto 0 auto;
-    border-radius: 6rpx;
+    border-radius: 0;
     background: #b99359;
 }
 
@@ -38,9 +35,8 @@
  */
 .ex-code-card {
     padding: 36rpx 36rpx 40rpx 36rpx;
-    background: #ffffff;
-    border-radius: 28rpx;
-    box-shadow: 0 12rpx 36rpx rgba(180, 150, 60, 0.14);
+    background: #fbfaf7;
+    border-radius: 0;
 }
 .ex-code-label {
     font-size: 30rpx;
@@ -51,6 +47,7 @@
     display: flex;
     align-items: center;
     margin-top: 24rpx;
+    border-bottom: 1px solid #e8e4dc;
 }
 .ex-code-input {
     flex: 1;
@@ -89,7 +86,6 @@
     align-items: center;
     justify-content: center;
     background: #be8f5b;
-    box-shadow: 0 16rpx 36rpx rgba(190, 150, 40, 0.32);
 }
 .ex-scan-circle-text {
     margin-top: 14rpx;
@@ -113,7 +109,6 @@
     align-items: center;
     justify-content: center;
     background: #be8f5b;
-    box-shadow: 0 14rpx 30rpx rgba(190, 150, 40, 0.30);
 }
 .ex-confirm-hover {
     opacity: 0.88;
@@ -122,7 +117,7 @@
     font-size: 38rpx;
     font-weight: 600;
     letter-spacing: 4rpx;
-    color: #fffaf0;
+    color: #ffffff;
 }
 .ex-confirm-arrow {
     margin-left: 16rpx;
@@ -143,9 +138,16 @@
     margin-bottom: 26rpx;
 }
 .ex-record-title {
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
     font-size: 32rpx;
     font-weight: 600;
-    color: #6f5700;
+    color: #1a1a1a;
+}
+.ex-record-title::before {
+    content: '「';
+}
+.ex-record-title::after {
+    content: '」';
 }
 .ex-record-more {
     display: flex;
@@ -163,25 +165,21 @@
     align-items: center;
     padding: 26rpx 28rpx;
     margin-bottom: 22rpx;
-    background: #ffffff;
-    border-radius: 20rpx;
-    box-shadow: 0 8rpx 24rpx rgba(170, 150, 80, 0.10);
-}
-.ex-rec-card-usable {
-    border-left: 8rpx solid #caa635;
+    background: #fbfaf7;
+    border-radius: 0;
 }
 .ex-rec-icon {
     width: 96rpx;
     height: 96rpx;
-    border-radius: 16rpx;
+    border-radius: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #f5eccf;
+    background: #ffffff;
 }
 .ex-rec-icon-used,
 .ex-rec-icon-expired {
-    background: #f0f0f0;
+    background: #ffffff;
 }
 .ex-rec-info {
     flex: 1;
@@ -210,22 +208,22 @@
     line-height: 56rpx;
 }
 .ex-rec-status-usable {
-    background: #f5e8c2;
-    color: #735b00;
+    background: #ffffff;
+    color: #9e2b22;
 }
 .ex-rec-status-used {
-    background: #ededed;
-    color: #9d9d9d;
+    background: #ffffff;
+    color: #606060;
 }
 .ex-rec-status-expired {
-    background: #f9eaea;
-    color: #c55b5b;
+    background: #ffffff;
+    color: #c98f89;
 }
 .ex-record-empty {
     padding: 70rpx 0;
     text-align: center;
     font-size: 26rpx;
-    color: #b9a986;
+    color: #606060;
 }
 
 /**
@@ -248,8 +246,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #ffffff;
-    box-shadow: 0 12rpx 36rpx rgba(180, 150, 60, 0.16);
+    background: #fbfaf7;
 }
 .ex-result-msg {
     margin-top: 40rpx;

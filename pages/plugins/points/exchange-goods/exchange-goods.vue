@@ -122,34 +122,35 @@
 <style scoped>
     .exchange-goods-page {
         min-height: 100vh;
-        background: linear-gradient(180deg, #fdf3d9 0%, #f7f7f7 40%);
+        background: #ffffff;
     }
     .eg-header {
         padding: 40rpx 30rpx 20rpx;
     }
     .eg-title {
+        font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
         font-size: 40rpx;
         font-weight: bold;
-        color: #a5772a;
+        color: #1a1a1a;
     }
     .eg-subtitle {
         font-size: 24rpx;
-        color: #b9902f;
+        color: #606060;
         margin-top: 10rpx;
     }
     .eg-list {
         padding: 20rpx 24rpx;
     }
     .eg-card {
-        background: #fff;
-        border-radius: 20rpx;
+        background: #fbfaf7;
+        border-radius: 0;
         padding: 20rpx;
         margin-bottom: 20rpx;
     }
     .eg-img {
         width: 160rpx;
         height: 160rpx;
-        border-radius: 16rpx;
+        border-radius: 0;
         flex-shrink: 0;
     }
     .eg-info {
@@ -165,10 +166,10 @@
         display: inline-block;
         margin-top: 16rpx;
         font-size: 22rpx;
-        color: #a5772a;
-        background: #fdf0d0;
+        color: #9e2b22;
+        background: #ffffff;
         padding: 4rpx 16rpx;
-        border-radius: 8rpx;
+        border-radius: 0;
     }
     .eg-btn {
         flex-shrink: 0;
