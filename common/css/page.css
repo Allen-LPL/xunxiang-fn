@@ -469,10 +469,10 @@ button:before {
     border: 2rpx solid #52C41A !important;
 }
 .br-grey {
-    border: solid 2rpx #dddddd !important;
+    border: solid 2rpx #e8e4dc !important;
 }
 .br-grey-d {
-    border: solid 2rpx #dddddd !important;
+    border: solid 2rpx #e8e4dc !important;
 }
 .br-grey-f5 {
     border: solid 2rpx #f5f5f5 !important;
@@ -555,7 +555,7 @@ button:before {
     color: #ccc !important;
 }
 .cr-grey-d {
-    color: #ddd !important;
+    color: #e8e4dc !important;
 }
 .cr-grey-white {
     color: #e7e7e7 !important;
@@ -602,7 +602,7 @@ button:before {
     background-color: #d6d6d6 !important;
 }
 .bg-grey-d {
-    background-color: #dddddd !important;
+    background-color: #e8e4dc !important;
 }
 .bg-grey-e {
     background-color: #eeeeee !important;
@@ -1134,7 +1134,7 @@ button[disabled].bg-grey {
 .divider-r-d::after,
 .divider-t-d::before,
 .divider-b-d::after {
-    background: #dddddd !important;
+    background: #f1eee8 !important;
 }
 .divider-l::before,
 .divider-l-f5::before,

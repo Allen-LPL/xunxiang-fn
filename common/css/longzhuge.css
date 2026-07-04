@@ -17,7 +17,7 @@ page {
     /* 去框化辅助色 */
     --paper-soft: #fbfaf7;    /* 弱分组底色（与纯白差≤3%） */
     --line-soft: #f1eee8;     /* 分割线上限色，1px */
-    --line-warm: #e8e4dc;     /* 输入框淡暖灰描边，替代冷灰 #ddd */
+    --line-warm: #e8e4dc;     /* 输入框淡暖灰描边，替代冷灰 */
 
     /* 排印 */
     --font-serif: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;

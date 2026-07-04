@@ -12,7 +12,7 @@
 - [x] **P0-2 清除微信红系（5 处）**：`common/css/page.css:596`（#E64340 !important）、`components/cart/cart.vue:398`（js 内联 backgroundColor '#E64340'→ 改为印章红色值字符串，属样式值可改）、`pages/goods-comment/goods-comment.css:35`（#dd514c）→ 统一印章红 `#9E2B22`。（goods-detail.old.* 属死码不改）
 - [x] **P0-3 清除金色渐变 → 驼金平涂 #BE8F5B（实际 26 处，首轮正则漏检浅金导航系）**：CTA/图标/徽章→#BE8F5B 平涂；金渐变文字/下划线→#B99359 平涂；浅金/米金导航条与头部大底→纯白 #FFFFFF。覆盖 13 文件（index、user、paytips、exchange-success、faq、goods-search、goods-detail、user-order、user-address、user-integral、points/scan、points/exchange-goods、antifakecode）。
 - [x] **P0-4 theme.css 渐变清零（8 处）**：全部 gradient 改各主题主色平涂；theme-red 整块收敛为印章红体系（#ff0036→#9E2B22、浅色→#eddcda 系、pair 黄→御金 #B99359）；App.vue get_theme_color() 的 red/red_light 同步。
-- [ ] **P0-5 冷灰 #DDD 描边 → 淡暖灰 #E8E4DC**：`common/css/lib.css`、`common/css/page.css`、`common/js/common/common.js`（DIY 样式默认值中的色值字符串）、`components/cart/cart.vue`、`pages/user-address/user-address.css`、`pages/plugins/scanpay/index/index.vue`。（video/ask/live/weixinliveplayer 等非核心插件延后到 P2-1）
+- [x] **P0-5 冷灰 #DDD 描边 → 淡暖灰 #E8E4DC**：`common/css/lib.css`、`common/css/page.css`、`common/js/common/common.js`（DIY 样式默认值中的色值字符串）、`components/cart/cart.vue`、`pages/user-address/user-address.css`、`pages/plugins/scanpay/index/index.vue`。（video/ask/live/weixinliveplayer 等非核心插件延后到 P2-1）
 
 ## P1 — 核心链路逐页走查（首页→商品→兑换→个人中心）
 

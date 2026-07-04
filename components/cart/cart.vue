@@ -1583,7 +1583,7 @@
         content: '';
         width: 76px;
         height: 1px;
-        background: #dddddd;
+        background: #f1eee8;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);

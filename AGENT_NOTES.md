@@ -39,7 +39,10 @@ grep -rniE '#dddddd|#ddd\b' common components/cart pages/user-address pages/plug
 
 ## 下轮注意
 
-- 下一项任务：**P0-5 冷灰 #DDD 描边 → 淡暖灰 #E8E4DC**（lib.css、page.css、common.js、cart.vue、user-address.css、scanpay）。
+- 下一项任务：**P1-1 全局导航与 tabbar**（先找自绘 tabbar 组件；pages.json navigationBar 纯白核对）。
+- P0 已全部完成 ✅（token / 微信红 / 金渐变 / theme.css / 冷灰）。
+- `common/css/page.css:368` `.sales-price` 价格色是橙红 #E22C08 —— 「价格=印章红」规则，全站价格组件用它，改动影响面大，纳入 P1 走查（建议单独在 P1-7 商品详情轮或价格统一时处理）。
+- `pages/plugins/scanpay/index/index.vue:34` 选中态 #E83B11 荧光橙红未动（本轮只清 #ddd），归 P2-1。
 - theme-red 印章红色阶已定：主 #9e2b22 / 浅 #eddcda / 中浅 #c98f89 / 更浅 #f4eae8 / 最浅 #faf5f4 / pair #b99359——各页走查时红色系一律对齐这套色阶。
 - 其余 7 个主题（yellow/black/green/orange/blue/brown/purple）只做了去渐变，色值未龙珠阁化——default_theme 为 red，非默认主题不在本次规范范围（如需全部收敛另立任务）。
 - token 文件已就绪：`common/css/longzhuge.css`，页面可直接用 `var(--seal-red)` 等变量与 `.lz-*` 工具类（nvue 除外）。
