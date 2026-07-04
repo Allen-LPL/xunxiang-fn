@@ -24,9 +24,10 @@ page {
 .form-content .verify {
     height: 50px;
     line-height: 50px;
-    background: #F9F9F9;
-    border-radius: 25px;
+    background: transparent;
+    border-radius: 0;
     border: 0;
+    border-bottom: 1px solid #e8e4dc;
 }
 .form-content .code input,
 .form-content .verify input {
@@ -54,15 +55,15 @@ page {
     /* //这个地方的颜色是字体颜色，可以根据实际情况修改 */
     /* -webkit-text-fill-color: #ededed !important;  */
     /* //设置input输入框的背景颜色为透明色 */
-    -webkit-box-shadow: 0 0 0px 1000px #f9f9f9 inset !important;
+    -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
     /* //设置input输入框的背景颜色为透明色 */
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     background-image: none;
     transition: background-color 50000s ease-in-out 0s;
 }
 .form-content .code ::v-deep .uni-input-input:-webkit-autofill {
     /* //设置input输入框的背景颜色为透明色 */
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     background-image: none;
     transition: background-color 50000s ease-in-out 0s;
 }
@@ -112,10 +113,10 @@ page {
 }
 .popup-login .content,
 .popup-login .footer .cancel-btn {
-    border-radius: 32rpx;
+    border-radius: 0;
 }
 .popup-login .content .item:not(:last-child) {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #f1eee8;
 }
 .popup-login .content .item image {
     width: 36rpx !important;

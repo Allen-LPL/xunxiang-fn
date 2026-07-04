@@ -26,7 +26,7 @@
 - [x] **P1-8 pages/exchange-success + paytips 走查**：页底米色 #f5f1ea→纯白；导航暗金 #6b5a2e/#5a4a22→墨黑、导航标题宋体；结果图标金光/红光投影删除；失败图标粉渐变→#c98f89 平涂；结果主标题 40rpx 宋体墨黑；按钮直角、次按钮描边 #eeeeee→#e8e4dc；金色面积复核：仅结果图标+主按钮驼金平涂，合规。
 - [x] **P1-9 pages/user-integral（积分明细）走查**：页底米色 #f3eee3→纯白；列表卡 20rpx 圆角+投影→直角 #fbfaf7 无投影；导航暗金→墨黑+标题宋体；积分增减数字 34rpx 宋体墨黑；分割线 #f4f4f4→#f1eee8。
 - [x] **P1-10 pages/faq 走查**：页底米色 #f6f1e8→纯白×2；导航暗金→墨黑+标题宋体；hero FAQ 金字→御金 token、主标题 46→44rpx 宋体；分类卡/QA 面板去圆角去金光投影 #fbfaf7、active 态御金细描边；冷色渐变图标×3→青绿/灰绿/青花蓝平涂（青花蓝为规范允许例外）；搜索框白底+#e8e4dc 描边；Q 徽章米金→白底御金；答案块米色→白；客服按钮金光投影删除；装饰预算：hero deco 为每屏唯一装饰 ✅。
-- [ ] **P1-11 pages/login 走查**：输入框下划线式或 #E8E4DC 描边、主按钮墨黑底白字、去圆角胶囊渐变。
+- [x] **P1-11 pages/login 走查**：输入框冷灰 #F9F9F9 底 25px 胶囊→透明底下划线式（1px #e8e4dc）；autofill 底色 #f9f9f9→白；登录弹层 32rpx 圆角→直角、分割线 #eee→#f1eee8；主按钮走 bg-main（已印章红）胶囊平涂合规。
 - [ ] **P1-12 pages/goods-category + goods-search 走查**：tab/筛选样式统一、卡片去框、每屏≤2.5 卡片密度（列表间距）。
 - [ ] **P1-13 pages/cart + components/cart 走查**：结算按钮墨黑/印章红、价格格式、去圆角胶囊。
 - [ ] **P1-14 pages/user-order + user-order-detail 走查**：订单卡片去框（留白分组）、状态色收敛（禁荧光/冷色）、按钮形制统一。
