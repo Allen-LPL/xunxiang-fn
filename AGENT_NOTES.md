@@ -39,7 +39,8 @@ grep -rniE '#dddddd|#ddd\b' common components/cart pages/user-address pages/plug
 
 ## 下轮注意
 
-- 下一项任务：**P1-10 pages/faq 走查**（faq.css 剩余：绿/青/蓝渐变图标块 117-123、客服按钮金光投影 :256 附近、去框化、「」标题、装饰≤1/屏）。
+- 下一项任务：**P1-11 pages/login 走查**（输入框下划线式或 #E8E4DC、主按钮墨黑底白字、去圆角胶囊渐变）。
+- FAQ 分类图标色板定案：青绿 #2f4a4a / 灰绿 #547070 / 青花蓝 #3a3f8f（规范明文例外）/ 驼金 #be8f5b——多分类图标需要区分色时用这套。
 - goods-comment 进度条 4 色已收敛（含 #5eb95e 荧光绿→千里江山青绿 #2f4a4a），该页其余样式待全量复核轮抽查。
 - points/index 是 ShopXO 原生积分页（分享/明细），主要靠全局 theme 类；自定义"兑换中心"界面在 points/scan（礼券码输入+大标题）。
 - SVG base64 图标重上色套路：python 解码→replace fill→重编码（见第 10 轮），比手工 sed 安全，能同时断言所有 fill 合规。

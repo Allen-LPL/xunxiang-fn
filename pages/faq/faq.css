@@ -1,11 +1,11 @@
 /* 积分商城-常见问题/帮助中心 —— 按 Figma(9-3485) 还原，单位 rpx */
 page {
-    background-color: #f6f1e8;
+    background-color: #ffffff;
 }
 .faq {
     min-height: 100vh;
     padding-bottom: 40rpx;
-    background-color: #f6f1e8;
+    background-color: #ffffff;
 }
 
 /* 金色导航 */
@@ -24,21 +24,22 @@ page {
 .faq .faq-nav-arrow {
     width: 20rpx;
     height: 20rpx;
-    border-left: 4rpx solid #5a4a22;
-    border-bottom: 4rpx solid #5a4a22;
+    border-left: 4rpx solid #1a1a1a;
+    border-bottom: 4rpx solid #1a1a1a;
     transform: rotate(45deg);
     margin-right: 8rpx;
 }
 .faq .faq-nav-back-text {
     font-size: 27rpx;
-    color: #5a4a22;
+    color: #1a1a1a;
 }
 .faq .faq-nav-title {
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     font-size: 34rpx;
-    color: #3a3a3a;
+    color: #1a1a1a;
     font-weight: 500;
     letter-spacing: 2rpx;
 }
@@ -57,12 +58,13 @@ page {
 .faq .faq-hero-faq {
     font-size: 72rpx;
     font-weight: bold;
-    color: #ca9f47;
+    color: #b99359;
     letter-spacing: 2rpx;
 }
 .faq .faq-hero-title {
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
     margin-left: 16rpx;
-    font-size: 46rpx;
+    font-size: 44rpx;
     font-weight: bold;
     color: #1a1a19;
 }
@@ -95,14 +97,12 @@ page {
     box-sizing: border-box;
     padding: 24rpx 20rpx;
     margin-bottom: 20rpx;
-    background: #ffffff;
-    border-radius: 20rpx;
+    background: #fbfaf7;
+    border-radius: 0;
     border: 2rpx solid transparent;
-    box-shadow: 0 8rpx 22rpx rgba(180, 150, 80, 0.10);
 }
 .faq .faq-card-active {
-    border-color: #e0bd6a;
-    box-shadow: 0 10rpx 26rpx rgba(196, 158, 60, 0.22);
+    border-color: #b99359;
 }
 .faq .faq-card-icon {
     width: 76rpx;
@@ -114,13 +114,13 @@ page {
     flex-shrink: 0;
 }
 .faq .faq-card-icon-0 {
-    background: linear-gradient(135deg, #7fc08a 0%, #5fa86d 100%);
+    background: #2f4a4a;
 }
 .faq .faq-card-icon-1 {
-    background: linear-gradient(135deg, #6cc6b0 0%, #46ab92 100%);
+    background: #547070;
 }
 .faq .faq-card-icon-2 {
-    background: linear-gradient(135deg, #6fa8e6 0%, #4a82d6 100%);
+    background: #3a3f8f;
 }
 .faq .faq-card-icon-3 {
     background: #be8f5b;
@@ -145,8 +145,8 @@ page {
 .faq .faq-card-arrow {
     width: 16rpx;
     height: 16rpx;
-    border-top: 3rpx solid #c9a44e;
-    border-right: 3rpx solid #c9a44e;
+    border-top: 3rpx solid #b99359;
+    border-right: 3rpx solid #b99359;
     transform: rotate(45deg);
     flex-shrink: 0;
 }
@@ -155,9 +155,8 @@ page {
 .faq .faq-panel {
     margin: 16rpx 30rpx 0;
     padding: 12rpx 28rpx 20rpx;
-    background: #ffffff;
-    border-radius: 24rpx;
-    box-shadow: 0 8rpx 24rpx rgba(180, 150, 80, 0.10);
+    background: #fbfaf7;
+    border-radius: 0;
 }
 
 /* 搜索 */
@@ -165,7 +164,8 @@ page {
     margin: 16rpx 0;
     padding: 0 24rpx;
     height: 76rpx;
-    background: #f5f5f5;
+    background: #ffffff;
+    border: 1px solid #e8e4dc;
     border-radius: 38rpx;
 }
 .faq .faq-search-input {
@@ -180,7 +180,7 @@ page {
 
 /* Q&A 项 */
 .faq .faq-qa {
-    border-top: 1rpx solid #f0f0f0;
+    border-top: 1rpx solid #f1eee8;
 }
 .faq .faq-qa:first-child {
     border-top: 0;
@@ -194,8 +194,8 @@ page {
     line-height: 44rpx;
     text-align: center;
     border-radius: 50%;
-    background: #f6ecd2;
-    color: #c38c26;
+    background: #ffffff;
+    color: #b99359;
     font-size: 30rpx;
     font-weight: bold;
     flex-shrink: 0;
@@ -225,15 +225,15 @@ page {
     font-size: 26rpx;
     color: #6c6c6c;
     line-height: 1.7;
-    background: #faf6ec;
-    border-radius: 12rpx;
+    background: #ffffff;
+    border-radius: 0;
     padding: 20rpx 24rpx;
 }
 .faq .faq-empty {
     padding: 80rpx 0;
     text-align: center;
     font-size: 26rpx;
-    color: #b9a986;
+    color: #606060;
 }
 
 /* 联系在线客服 */
@@ -253,7 +253,6 @@ page {
     border-radius: 46rpx;
     padding: 0;
     background: #be8f5b;
-    box-shadow: 0 12rpx 28rpx rgba(196, 158, 60, 0.34);
 }
 .faq .faq-service-hover {
     opacity: 0.9;
