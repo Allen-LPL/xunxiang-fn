@@ -32,7 +32,7 @@
                 currency_symbol: '￥',
 
                 // 默认主题        主题颜色
-                // 红色 red       #ff0036
+                // 红色 red       #9e2b22
                 // 黄色 yellow    #f6c133
                 // 黑色 black     #333333
                 // 绿色 green     #20a53a
@@ -2699,7 +2699,7 @@
             get_theme_color(theme, is_light = false) {
                 let color_obj = {
                     // 主色
-                    red: '#ff0036', // 红色
+                    red: '#9e2b22', // 红色（龙珠阁印章红）
                     yellow: '#f6c133', // 黄色
                     black: '#333333', // 黑色
                     blue: '#1677ff', // 蓝色
@@ -2709,7 +2709,7 @@
                     purple: '#623cec', // 紫色
 
                     // 浅主色
-                    red_light: '#ffdbe2', // 红色
+                    red_light: '#eddcda', // 红色（印章红浅调）
                     yellow_light: '#ffebd2', // 黄色
                     black_light: '#dcdcdc', // 黑色
                     blue_light: '#d1e4ff', // 蓝色
@@ -2736,7 +2736,7 @@
             // 获取主题
             get_theme_value() {
                 // 主题类型        主题颜色
-                // 红色 red       #ff0036
+                // 红色 red       #9e2b22
                 // 黄色 yellow    #f6c133
                 // 黑色 black     #333333
                 // 绿色 green     #20a53a

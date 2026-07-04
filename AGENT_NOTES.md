@@ -39,7 +39,9 @@ grep -rniE '#dddddd|#ddd\b' common components/cart pages/user-address pages/plug
 
 ## 下轮注意
 
-- 下一项任务：**P0-4 theme.css 渐变清零（8 处）**，含 :99 红渐变 #ff0036→#ffdbe2；theme-red 主题色值向印章红 #9E2B22 收敛（只改色值不动类结构）。
+- 下一项任务：**P0-5 冷灰 #DDD 描边 → 淡暖灰 #E8E4DC**（lib.css、page.css、common.js、cart.vue、user-address.css、scanpay）。
+- theme-red 印章红色阶已定：主 #9e2b22 / 浅 #eddcda / 中浅 #c98f89 / 更浅 #f4eae8 / 最浅 #faf5f4 / pair #b99359——各页走查时红色系一律对齐这套色阶。
+- 其余 7 个主题（yellow/black/green/orange/blue/brown/purple）只做了去渐变，色值未龙珠阁化——default_theme 为 red，非默认主题不在本次规范范围（如需全部收敛另立任务）。
 - token 文件已就绪：`common/css/longzhuge.css`，页面可直接用 `var(--seal-red)` 等变量与 `.lz-*` 工具类（nvue 除外）。
 - `.lz-price` 用 ::before/::after 生成 `¥:` 与 ` 元`，模板侧只放数字即可；小程序 wxss 支持伪元素 content。
 - **首轮扫描的正则太窄**：金渐变实际 26 处（估 7）。以后每类断言都要用宽正则 + `grep -o 'linear-gradient(...' | sort | uniq -c` 人工过目兜底。
