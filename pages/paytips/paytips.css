@@ -1,10 +1,10 @@
 /* 积分商城-支付结果 —— 按 Figma(9-2459) 金色风格还原，单位 rpx */
 page {
-    background-color: #f5f1ea;
+    background-color: #ffffff;
 }
 .paytips {
     min-height: 100vh;
-    background-color: #f5f1ea;
+    background-color: #ffffff;
 }
 
 /* 金色导航 */
@@ -23,21 +23,22 @@ page {
 .paytips .pt-nav-arrow {
     width: 20rpx;
     height: 20rpx;
-    border-left: 4rpx solid #6b5a2e;
-    border-bottom: 4rpx solid #6b5a2e;
+    border-left: 4rpx solid #1a1a1a;
+    border-bottom: 4rpx solid #1a1a1a;
     transform: rotate(45deg);
     margin-right: 8rpx;
 }
 .paytips .pt-nav-back-text {
     font-size: 27rpx;
-    color: #6b5a2e;
+    color: #1a1a1a;
 }
 .paytips .pt-nav-title {
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     font-size: 34rpx;
-    color: #5a4a22;
+    color: #1a1a1a;
     font-weight: 500;
     letter-spacing: 2rpx;
 }
@@ -57,11 +58,9 @@ page {
 }
 .paytips .pt-icon-success {
     background: #be8f5b;
-    box-shadow: 0 10rpx 24rpx rgba(196, 158, 60, 0.3);
 }
 .paytips .pt-icon-fail {
-    background: linear-gradient(135deg, #e0bdbd 0%, #c98a8a 100%);
-    box-shadow: 0 10rpx 24rpx rgba(180, 110, 110, 0.28);
+    background: #c98f89;
 }
 /* 成功对勾 */
 .paytips .pt-icon-check {
@@ -105,8 +104,9 @@ page {
 
 /* 结果文案 */
 .paytips .pt-title {
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
     font-size: 40rpx;
-    color: #333333;
+    color: #1a1a1a;
     font-weight: bold;
     margin-top: 44rpx;
     padding: 0 20rpx;
@@ -116,7 +116,7 @@ page {
 .paytips .pt-btn {
     height: 88rpx;
     line-height: 88rpx;
-    border-radius: 12rpx;
+    border-radius: 0;
     font-size: 32rpx;
 }
 .paytips .pt-btn-primary {
@@ -126,7 +126,7 @@ page {
 }
 .paytips .pt-btn-default {
     background-color: #ffffff;
-    border: 2rpx solid #eeeeee;
+    border: 2rpx solid #e8e4dc;
     color: #333333;
     margin-top: 24rpx;
 }
