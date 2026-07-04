@@ -1,7 +1,7 @@
 /* 积分商城首页 —— 按 Figma(750 设计稿) 1:1 还原，单位 rpx */
 .points-home {
     min-height: 100vh;
-    background-color: #f5f1ea;
+    background-color: #ffffff;
     padding-bottom: 140rpx;
 }
 
@@ -25,17 +25,15 @@
 /* ============ 会员积分卡 ============ */
 .member-card {
     height: 166rpx;
-    background-color: #fffdf8;
-    border: 2rpx solid #e8cd84;
-    border-radius: 20rpx;
-    box-shadow: 0 8rpx 24rpx rgba(180, 140, 40, 0.12);
+    background-color: #fbfaf7;
+    border-radius: 0;
     padding: 0 32rpx;
     box-sizing: border-box;
 }
 .member-card .avatar {
     width: 88rpx;
     height: 88rpx;
-    border: 2rpx solid #e8cd84;
+    border: 2rpx solid #b99359;
     flex-shrink: 0;
 }
 .member-card .member-info {
@@ -44,11 +42,7 @@
 .member-card .member-name {
     font-size: 28rpx;
     font-weight: bold;
-    color: #383737;
-    background: #b99359;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: #b8932f;
+    color: #1a1a1a;
 }
 .member-card .member-identity {
     font-size: 18rpx;
@@ -66,8 +60,9 @@
     color: #343434;
 }
 .member-card .points-value {
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
     font-size: 44rpx;
-    color: #343434;
+    color: #1a1a1a;
     line-height: 1.1;
     margin-top: 6rpx;
 }
@@ -75,16 +70,15 @@
 /* ============ 搜索框 ============ */
 .search-bar {
     height: 88rpx;
-    background-color: #ffffff;
+    background-color: #fbfaf7;
     border-radius: 44rpx;
     margin-top: 30rpx;
     padding: 0 32rpx;
-    box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.04);
 }
 .search-bar .search-icon {
     width: 30rpx;
     height: 30rpx;
-    border: 4rpx solid #c8a04a;
+    border: 4rpx solid #b99359;
     border-radius: 50%;
     position: relative;
     flex-shrink: 0;
@@ -96,7 +90,7 @@
     bottom: -6rpx;
     width: 14rpx;
     height: 4rpx;
-    background-color: #c8a04a;
+    background-color: #b99359;
     transform: rotate(45deg);
     border-radius: 4rpx;
 }
@@ -133,7 +127,7 @@
     width: 100%;
     height: 6rpx;
     background: #b99359;
-    border-radius: 4rpx;
+    border-radius: 0;
 }
 .filter-tabs .sort-arrows {
     display: inline-flex;
@@ -162,10 +156,9 @@
 .goods-card {
     width: 332rpx;
     background-color: #ffffff;
-    border-radius: 16rpx;
+    border-radius: 0;
     overflow: hidden;
     margin-bottom: 24rpx;
-    box-shadow: 0 6rpx 20rpx rgba(0, 0, 0, 0.05);
 }
 .goods-card .goods-img-box {
     width: 100%;
@@ -194,9 +187,10 @@
     opacity: 0.69;
 }
 .goods-card .goods-points-value {
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
     font-size: 44rpx;
-    font-weight: 300;
-    color: #bb9b2c;
+    font-weight: 400;
+    color: #9e2b22;
 }
 .goods-card .exchange-btn {
     min-width: 66rpx;
@@ -204,9 +198,9 @@
     line-height: 40rpx;
     padding: 0 16rpx;
     font-size: 18rpx;
-    color: #b07f1d;
-    border: 2rpx solid #d8b659;
-    border-radius: 20rpx;
+    color: #ffffff;
+    background-color: #9e2b22;
+    border-radius: 0;
     flex-shrink: 0;
 }
 
@@ -240,9 +234,16 @@
     padding: 16rpx 4rpx;
 }
 .hot-section .hot-title {
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
     font-size: 37rpx;
-    color: #3a3a3a;
+    color: #1a1a1a;
     font-weight: bold;
+}
+.hot-section .hot-title::before {
+    content: '「';
+}
+.hot-section .hot-title::after {
+    content: '」';
 }
 .hot-section .hot-more {
     font-size: 21rpx;
@@ -282,7 +283,7 @@
     background-position: center;
 }
 .custom-tabbar .tabbar-icon-goods {
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2Q1YjM0NSIgZD0iTTcgN1Y2YTUgNSAwIDAgMSAxMCAwdjFoMy4ybC44IDEzLjVhMSAxIDAgMCAxLTEgMS41SDRhMSAxIDAgMCAxLTEtMS41TDMuOCA3SDd6bTIgMGg2VjZhMyAzIDAgMCAwLTYgMHYxeiIvPjwvc3ZnPg==");
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2I5OTM1OSIgZD0iTTcgN1Y2YTUgNSAwIDAgMSAxMCAwdjFoMy4ybC44IDEzLjVhMSAxIDAgMCAxLTEgMS41SDRhMSAxIDAgMCAxLTEtMS41TDMuOCA3SDd6bTIgMGg2VjZhMyAzIDAgMCAwLTYgMHYxeiIvPjwvc3ZnPg==");
 }
 .custom-tabbar .tabbar-icon-gift {
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iIzg1ODU4NSIgZD0iTTE5IDdoLTIuMWEyLjcgMi43IDAgMCAwLTQuOS0yIDIuNyAyLjcgMCAwIDAtNC45IDJINWExIDEgMCAwIDAtMSAxdjNoMXY4YTEgMSAwIDAgMCAxIDFoMTJhMSAxIDAgMCAwIDEtMXYtOGgxVjhhMSAxIDAgMCAwLTEtMXptLTYgMTJoLTJ2LTdoMnY3em0tMy41LTEyYS44LjggMCAxIDEgMC0xLjYuOC44IDAgMCAxIDAgMS42em01IDBhLjguOCAwIDEgMSAwLTEuNi44LjggMCAwIDEgMCAxLjZ6Ii8+PC9zdmc+");
@@ -295,5 +296,5 @@
     color: #858585;
 }
 .custom-tabbar .tabbar-item-active .tabbar-text {
-    color: #d5b345;
+    color: #b99359;
 }
