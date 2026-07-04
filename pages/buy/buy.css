@@ -79,15 +79,15 @@
     padding: 0 12rpx;
     border-radius: 16rpx 0 16rpx 0;
     font-size: 20rpx;
-    background: #D8D8D8 linear-gradient(107deg, #FC6F31 0%, #E22C08 100%);
+    background: #9e2b22;
 }
 
 /**
 * 扩展数据
 */
 .extension-list {
-    background-color: #ffffeb;
-    border: 1px solid #ffe2cf;
+    background-color: #fbfaf7;
+    border: 1px solid #f1eee8;
 }
 .extension-list .item:not(:last-child) {
     border-bottom: 1px dashed #ffe2cf;

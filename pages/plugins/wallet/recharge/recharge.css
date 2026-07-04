@@ -36,15 +36,15 @@
 
 .recharge-price-content.active {
     background: rgba(226, 44, 8, 0.06);
-    color: #E22C08;
-    border: 1px solid #E22C08;
+    color: #9e2b22;
+    border: 1px solid #9e2b22;
 }
 
 .recharge-price-content .tips {
     height: 32rpx;
     line-height: 32rpx;
     padding: 0 20rpx;
-    background: #D8D8D8 linear-gradient(107deg, #FC6F31 0%, #E22C08 100%);
+    background: #9e2b22;
     border-radius: 16rpx 0 16rpx 0;
     top: -16rpx;
 }

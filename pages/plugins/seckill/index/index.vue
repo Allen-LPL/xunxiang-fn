@@ -28,7 +28,7 @@
                             <view v-if="is_valid == 1" class="dis-inline-block va-m margin-left-sm">
                                 <view v-for="(item, index) in periods_list" :key="index">
                                     <view v-show="nav_active_index === index">
-                                        <component-countdown :propHour="item.time.hours" :propMinute="item.time.minutes" :propSecond="item.time.seconds" :propTimeBackgroundColor="seckill_status === 1 ? '#E22C08' : '#333333'"></component-countdown>
+                                        <component-countdown :propHour="item.time.hours" :propMinute="item.time.minutes" :propSecond="item.time.seconds" :propTimeBackgroundColor="seckill_status === 1 ? '#9e2b22' : '#333333'"></component-countdown>
                                     </view>
                                 </view>
                             </view>

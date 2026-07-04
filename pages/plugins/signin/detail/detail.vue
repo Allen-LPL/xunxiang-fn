@@ -47,7 +47,7 @@
                                 <view v-for="(col, colIndex) in row" class="list tc" :class="col.class" :key="colIndex">
                                     <block v-if="col.today">
                                         <block v-if="user_signin_data && user_signin_data.current_day === 1">
-                                            <iconfont name="icon-select" color="#E22C08" size="48rpx"></iconfont>
+                                            <iconfont name="icon-select" color="#9e2b22" size="48rpx"></iconfont>
                                         </block>
                                         <block v-else>
                                             <text class="fw-b">{{$t('detail.detail.p07k62')}}</text>

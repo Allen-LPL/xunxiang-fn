@@ -10,7 +10,7 @@
                                     propClass="margin-right-sm pr top-xs"
                                     :name="select_ids.indexOf(item.id) != -1 ? 'icon-selected-solid' : 'icon-not-selected'"
                                     size="40rpx"
-                                    :color="select_ids.indexOf(item.id) != -1 ? '#E22C08' : '#999'"
+                                    :color="select_ids.indexOf(item.id) != -1 ? '#9e2b22' : '#999'"
                                 ></iconfont>
                             </view>
                             <text class="va-m">{{ item.order_no }}</text>

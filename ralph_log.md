@@ -25,3 +25,32 @@
 | 2026-07-04 | 7 | P1-1 全局导航与 tabbar 审计+兜底色对齐 | components/diy-footer/diy-footer.vue（兜底默认文字 rgba(0,0,0,1)→#1a1a1a、选中态 rgba(204,204,204,1)→#b99359 御金） | 审计断言：pages.json 导航背景非白=0、文字全 black；nav-back 白底；diy-footer 无描边/投影；tabbar 实际配色为后端 DIY 配置驱动（已记录于 AGENT_NOTES） |
 | 2026-07-04 | 6 | P0-5 冷灰 #DDD 清零（核心 6 文件 13 处） | common/css/page.css（.br-grey 描边×2、.cr-grey-d 文字、.bg-grey-d 背景→#e8e4dc；divider 系→#f1eee8）、lib.css（.cr-d→#e8e4dc）、common.js（DIY 指示器默认色×3→#e8e4dc）、cart.vue（guess-like 分割线→#f1eee8）、user-address.css（导入按钮描边→#e8e4dc）、scanpay/index.vue（未选中图标→#e8e4dc） | 断言：6 核心文件 #ddd=0；残留仅 video/ask/live/weixinliveplayer 插件（P2-1 范围）；分割线特殊处理为规范上限色 #f1eee8（#e8e4dc 深于上限不可用于线） |
 | 2026-07-04 | 4 | P0-3 金色渐变清零（实际 26 处/13 文件，远超首轮估计 7 处） | index、user、paytips、exchange-success、faq、goods-search、goods-detail、user-order、user-address、user-integral、points/scan、points/exchange-goods、antifakecode 的 css/vue | 修改前→后：金渐变 CTA/图标/徽章（如 #ecd79a→#d4af56）→ 驼金平涂 #BE8F5B；金渐变文字/下划线（#8f7410→#cfab37）→ 御金平涂 #B99359；浅金导航条/头部（#ecd9a8→#e9d09a、米金页底）→ 纯白 #FFFFFF。grep 终断言金/米 hex 渐变=0；剩余渐变均非金色（粉/绿/蓝/橙红，已记入备忘留待对应 P1/P2 轮） |
+| 2026-07-04 | 24 | P1-18 全量复核轮：全站价格印章红化 + 复核残留清零 | common/css/page.css(.sales-price)、common/css/theme.css(黄主题段 #FF0036×5)、pages/buy/buy.css、pages/plugins/{seckill,blog,signin,wallet,invoice,coupon,video}、components/payment/payment.vue | 修改前→后：#E22C08 全站(9文件)→#9e2b22；buy/wallet 橙红渐变角标→平涂；buy 米色块 #ffffeb/#ffe2cf→#fbfaf7/#f1eee8；coupon #ff9747→#ff6e01 渐变→#be8f5b、描边→印章红；video #e74c3c→#9e2b22。§5 终断言全部通过 |
+
+---
+
+## 终检报告（2026-07-04，第 24 轮）
+
+**结论：fix_plan.md 全部 P0（5/5）与 P1（18/18）任务完成，§5 清单逐项复核无未处理违规。**
+
+### §5 清单逐项复核结果（排除 `.old.*` 死码与 `uni_modules/` 第三方，下同）
+1. **色彩**：微信红系=0；微信绿 #1AAD19=0；荧光红/橙红系（#ff0036/#e1574b/#e74c3c/#E22C08/#FF6E01/#FF3B30/#ff9747）=0；米色底系=0；价格=印章红 #9e2b22（.sales-price 全站生效）；CTA=印章红/墨黑/驼金平涂。
+2. **排印**：宋体字体栈覆盖 13 个文件（导航标题/主标题/大数字）；「」section 标题 5 处（伪元素实现）；.lz-price 价格格式类已建（token 层，页面模板未强制重写以守铁律）。
+3. **尺度**：主标题 40-44rpx 宋体（faq 46→44、scan 56→44 已收敛）；积分大数字 44-64rpx 宋体。
+4. **去框**：核心页卡片描边盒子=0、圆角=0（存量胶囊平涂保形）；分割线全部 ≤1px 且 ≤#F1EEE8；输入框下划线式/#E8E4DC。
+5. **图占屏**：首页 banner、商品详情主图 750rpx 通栏出血；lz-overlay-dim 压暗渐变工具类就绪。
+6. **chrome**：核心域页面内超标投影=0（浮层统一 ≤0.06；豁免：autofill inset hack、功能性扫码遮罩）；导航全站纯白黑字。
+7. **形制**：theme.css 渐变=0、金渐变全项目=0、accent 装饰条已清（faq usable 条、category 彩条）。
+8. **节奏**：暗白场——本项目以白场信息页为主，无连续暗场问题；暗场按钮工具类（.lz-btn-dark）就绪。
+9. **系列主题**：.series-* 六系列主题类建于 longzhuge.css（P2-5 落地页应用为后续项）。
+10. **一致性**：theme-red（默认主题）整体印章红色阶；tabbar 兜底墨黑/御金；badge/countdown/进度条等共享组件统一。
+11. **资源**：运营 banner 图与 tabbar 后端 DIY 配置属运营侧（P2-4/AGENT_NOTES 已记录），不阻塞。
+
+### 已声明的 P2 遗留（按计划不阻塞完成）
+- P2-1 非核心插件内部装饰（video/ask/live/weixinliveplayer 的 #ddd、coin/magic/binding 等彩渐变、部分插件投影 >0.06）。
+- P2-2 DIY 组件（tabs-carousel/tabs-magic/float-window）——服务端配置驱动。
+- P2-3 `.old.*` 死码确认；P2-4 运营 banner 重制清单；P2-5 系列主题落地页应用。
+
+### 统计
+- 24 轮迭代，23 次提交（含 baseline），0 次业务逻辑改动，0 新增依赖。
+- 验证方式：静态 grep 断言（本项目无 npm 构建，HBuilderX 工程）+ 逐项修改前→后记录。

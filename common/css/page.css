@@ -365,7 +365,7 @@ button:before {
  * 价格
  */
 .sales-price {
-    color: #E22C08;
+    color: #9e2b22;
     font-weight: bold;
     font-size: 28rpx;
 }
@@ -460,7 +460,7 @@ button:before {
     border: 2rpx solid #FFF !important;
 }
 .br-red {
-    border: 2rpx solid #E22C08 !important;
+    border: 2rpx solid #9e2b22 !important;
 }
 .br-yellow {
     border: 2rpx solid #f6c133 !important;
@@ -519,7 +519,7 @@ button:before {
     border-right: dashed 2rpx #EEEEEE !important;
 }
 .br-dashed-red {
-    border: dashed 2rpx #E22C08 !important;
+    border: dashed 2rpx #9e2b22 !important;
 }
 .br-dashed-yellow {
     border: dashed 2rpx #f6c133 !important;
@@ -536,7 +536,7 @@ button:before {
  * 文本价格色、基础色、白色、黑色、灰色、浅灰色、红色、黄色、绿色、蓝色
  */
 .cr-price {
-    color: #E22C08;
+    color: #9e2b22;
 }
 .cr-base {
     color: #666 !important;
@@ -561,7 +561,7 @@ button:before {
     color: #e7e7e7 !important;
 }
 .cr-red {
-    color: #E22C08 !important;
+    color: #9e2b22 !important;
 }
 .cr-yellow {
     color: #f6c133 !important;

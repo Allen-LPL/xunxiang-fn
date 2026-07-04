@@ -192,7 +192,7 @@
         width: 116rpx;
         text-align: center;
         padding: 6rpx 0;
-        background: linear-gradient(93deg, #ff9747 0%, #ff6e01 100%);
+        background: #be8f5b;
         border-radius: 13px;
     }
 

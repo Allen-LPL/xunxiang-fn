@@ -39,7 +39,8 @@ grep -rniE '#dddddd|#ddd\b' common components/cart pages/user-address pages/plug
 
 ## 下轮注意
 
-- 下一项任务：**P1-18 全量复核轮**（§5 清单逐项 grep 断言 + 抽查；含 .sales-price #E22C08 价格色的全站决策——page.css:368，改为印章红后全站商品价格生效）。
+- **P0/P1 全部完成（第 24 轮终检通过）**。后续若继续迭代，从 P2-1 开始（非核心插件内部装饰：video/ask/live/weixinliveplayer #ddd、coin/magic/binding 彩渐变、插件投影>0.06）。
+- .sales-price 已定案印章红 #9e2b22（第 24 轮全站生效，含 seckill 倒计时、payment/invoice/signin 选中态）。
 - 投影豁免清单（复核轮别误报）：login.css autofill 白色 inset hack、page.css:500 0.03、各页底部浮动条 0.06、scan 取景框 9999px 遮罩（功能性）、uploads.vue 的 box-shadow-* 类名字样。
 - 微信绿已全项目清零 ✅（"遗留观察"第 1 条完成）；"成功/正向"语义色定为千里江山青绿 #2f4a4a。
 - **坑：部分 css 文件是 CRLF 行尾**（goods-category.css 等，且内部混合）。python open().read()/write() 会静默转 LF 造成全文件 diff——改用 bytes 模式或改完后恢复 CRLF。sed 不受影响。

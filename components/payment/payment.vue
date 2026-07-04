@@ -37,7 +37,7 @@
                                 <text class="va-m">{{ item.name }}</text>
                                 <text v-if="(item.tips || null) !== null" class="va-m cr-red">（{{ item.tips }}）</text>
                             </view>
-                            <iconfont :name="payment_id == item.id ? 'icon-selected-solid' : 'icon-not-selected'" size="44rpx" :color="payment_id == item.id ? '#E22C08' : '#ccc'"></iconfont>
+                            <iconfont :name="payment_id == item.id ? 'icon-selected-solid' : 'icon-not-selected'" size="44rpx" :color="payment_id == item.id ? '#9e2b22' : '#ccc'"></iconfont>
                         </view>
                     </scroll-view>
                 </view>
