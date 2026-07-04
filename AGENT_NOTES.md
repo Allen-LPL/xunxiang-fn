@@ -39,4 +39,6 @@ grep -rniE '#dddddd|#ddd\b' common components/cart pages/user-address pages/plug
 
 ## 下轮注意
 
-- 下一项任务：**P0-1 建 token 文件**。注意小程序不支持 body 选择器，CSS 变量挂在 `page` 上；nvue 不支持 CSS 变量（live/video 的 nvue 文件别用 var()）。
+- 下一项任务：**P0-2 清除微信红系 3 处活代码**（page.css:596、cart.vue:398 js 色值字符串、goods-comment.css:35）→ #9E2B22。
+- token 文件已就绪：`common/css/longzhuge.css`，页面可直接用 `var(--seal-red)` 等变量与 `.lz-*` 工具类（nvue 除外）。
+- `.lz-price` 用 ::before/::after 生成 `¥:` 与 ` 元`，模板侧只放数字即可；小程序 wxss 支持伪元素 content。

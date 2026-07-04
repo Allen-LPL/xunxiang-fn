@@ -1,0 +1,178 @@
+/**
+ * longzhuge.css — 龙珠阁视觉规范设计令牌（权威依据：docs/design.longzhuge.md）
+ * 仅含设计 token 与纯样式工具类，不含任何业务逻辑。
+ * 注意：CSS 变量挂在 page 上（小程序无 body/:root）；nvue 页面不支持 CSS 变量，勿在 nvue 中使用 var()。
+ */
+
+/* ================= 1. 全局令牌 ================= */
+page {
+    /* 基础色 */
+    --paper: #ffffff;         /* 白场底，禁止米色/奶油色 */
+    --ink: #1a1a1a;           /* 正文墨黑 */
+    --ink-soft: #606060;      /* 次级文字 */
+    --camel-gold: #be8f5b;    /* 驼金：CTA 平涂、包装场景 */
+    --imperial-gold: #b99359; /* 御金：图标、描边、点缀，面积≤5% */
+    --seal-red: #9e2b22;      /* 印章红：价格、确认类按钮 */
+
+    /* 去框化辅助色 */
+    --paper-soft: #fbfaf7;    /* 弱分组底色（与纯白差≤3%） */
+    --line-soft: #f1eee8;     /* 分割线上限色，1px */
+    --line-warm: #e8e4dc;     /* 输入框淡暖灰描边，替代冷灰 #ddd */
+
+    /* 排印 */
+    --font-serif: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
+    --font-sans: 'Noto Sans SC', 'Source Han Sans SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* ================= 2. 系列主题（theme-per-series） =================
+   用法：在系列容器上加 class="series-qinghua"，内部用 var(--series-dark/--series-primary/--series-text)。
+   同一屏只允许一个系列主题；系列间用白场过渡。 */
+.series-qinghua {
+    --series-dark: #2a2440;
+    --series-primary: #3a3f8f;
+    --series-accent: #b99359;
+    --series-text: #ffffff;
+}
+.series-jiangshan {
+    --series-dark: #202830;
+    --series-primary: #2f4a4a;
+    --series-accent: #b99359;
+    --series-text: #ffffff;
+}
+.series-baoxiang {
+    --series-dark: #3e2418;
+    --series-primary: #e2a63d;
+    --series-accent: #b99359;
+    --series-text: #ffffff;
+}
+.series-fendai {
+    /* 亮场系列：文字用墨黑 */
+    --series-dark: #dd7048;
+    --series-primary: #f2b8c0;
+    --series-accent: #b99359;
+    --series-text: #1a1a1a;
+}
+.series-yuxue {
+    --series-dark: #223338;
+    --series-primary: #bfd4da;
+    --series-accent: #bfd4da;
+    --series-text: #ffffff;
+}
+.series-qingbai {
+    /* 亮场系列：文字用墨黑 */
+    --series-dark: #ffffff;
+    --series-primary: #aec4c0;
+    --series-accent: #547070;
+    --series-text: #1a1a1a;
+}
+
+/* ================= 3. 排印工具类 ================= */
+/* 宋体：仅用于大标题/页面标题/大号价格数字；正文≥14px(28rpx)才允许宋体，小字一律黑体 */
+.lz-serif {
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
+}
+
+/* 页面主标题：宋体 40-44px(@2x)，与说明文字字号比 ≥1.8:1 */
+.lz-title {
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
+    font-size: 42rpx;
+    line-height: 1.4;
+    color: var(--ink, #1a1a1a);
+}
+
+/* 系列名宽字距（≤6 字才可用，须确认不折行） */
+.lz-series-name {
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
+    letter-spacing: 0.45em;
+    white-space: nowrap;
+}
+
+/* section 标题：「」直角引号包裹 */
+.lz-section-title {
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
+    font-size: 34rpx;
+    color: var(--ink, #1a1a1a);
+}
+.lz-section-title::before {
+    content: '「';
+}
+.lz-section-title::after {
+    content: '」';
+}
+
+/* 价格：印章红，格式 ¥:5980 元（模板写法：<text class="lz-price"><text class="lz-price-num">5980</text></text>） */
+.lz-price {
+    color: var(--seal-red, #9e2b22);
+    font-size: 24rpx;
+}
+.lz-price::before {
+    content: '¥:';
+}
+.lz-price::after {
+    content: ' 元';
+}
+.lz-price-num {
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
+    font-size: 36rpx;
+}
+
+/* 金额/积分大数字：宋体 56-64px(@2x) */
+.lz-num-hero {
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
+    font-size: 60rpx;
+    line-height: 1.2;
+}
+
+/* ================= 4. 形制工具类 ================= */
+/* 白场主按钮：墨黑底白字，直角 */
+.lz-btn-ink {
+    background-color: var(--ink, #1a1a1a);
+    color: #ffffff;
+    border-radius: 0;
+    border: none;
+}
+
+/* 白场确认类按钮：印章红底白字，直角 */
+.lz-btn-seal {
+    background-color: var(--seal-red, #9e2b22);
+    color: #ffffff;
+    border-radius: 0;
+    border: none;
+}
+
+/* 暗场按钮：直角 + 1px 御金描边 + 透明底 */
+.lz-btn-dark {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid var(--imperial-gold, #b99359);
+    border-radius: 0;
+}
+
+/* 分割线：原则不用；必须用时 1px、不深于 #F1EEE8 */
+.lz-divider {
+    height: 1px;
+    background-color: var(--line-soft, #f1eee8);
+}
+
+/* 输入框：下划线式 */
+.lz-input-underline {
+    border: none;
+    border-bottom: 1px solid var(--line-warm, #e8e4dc);
+    border-radius: 0;
+    background-color: transparent;
+}
+
+/* 弱分组底色（去框化唯一例外） */
+.lz-group-soft {
+    background-color: var(--paper-soft, #fbfaf7);
+}
+
+/* 满版图 overlay 文字底部压暗渐变（0→40%），置于图片容器内底部 */
+.lz-overlay-dim {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+/* 浮层投影（仅弹窗/抽屉允许，opacity≤0.06；页面内元素一律纯平） */
+.lz-float-shadow {
+    box-shadow: 0 8rpx 32rpx rgba(26, 26, 26, 0.06);
+}
