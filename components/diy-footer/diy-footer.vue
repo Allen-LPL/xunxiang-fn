@@ -117,8 +117,8 @@
                         nav_type: new_content.nav_type || 0,
                         nav_style: new_content.nav_style || 0,
                         active_index: active_index,
-                        default_text_color: 'color:' + new_style.default_text_color || 'rgba(0, 0, 0, 1)',
-                        text_color_checked: 'color:' + new_style.text_color_checked || 'rgba(204, 204, 204, 1)',
+                        default_text_color: 'color:' + new_style.default_text_color || '#1a1a1a',
+                        text_color_checked: 'color:' + new_style.text_color_checked || '#b99359',
                         style_container: common_styles_computer(new_style.common_style),
                         style_img_container: common_img_computer(new_style.common_style),
                     });

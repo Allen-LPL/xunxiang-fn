@@ -39,8 +39,10 @@ grep -rniE '#dddddd|#ddd\b' common components/cart pages/user-address pages/plug
 
 ## 下轮注意
 
-- 下一项任务：**P1-1 全局导航与 tabbar**（先找自绘 tabbar 组件；pages.json navigationBar 纯白核对）。
+- 下一项任务：**P1-2 排印基建**（宋体工具类已在 longzhuge.css 建好，本任务核心是把「」标题/价格格式样式类落到 business.css 级别可复用，或确认 longzhuge.css 已覆盖后直接勾掉并开始应用到 P1-3 首页）。
 - P0 已全部完成 ✅（token / 微信红 / 金渐变 / theme.css / 冷灰）。
+- **tabbar 架构**：pages.json tabBar 全 transparent（占位），真实渲染链 = components/common/common.vue → component-diy-footer（components/diy-footer/diy-footer.vue），配色/图标来自后端 `get_config('app_tabbar')` DIY 配置。前端只有兜底默认色（已改墨黑/御金）。**要让 tabbar 真正龙珠阁化需在后端 DIY 后台配置图标与色值**——列为运营侧事项，不阻塞前端走查。
+- diy-footer.vue:120 存在既有表达式优先级问题（'color:'+x || fallback 恒取左侧），兜底色实际难触达——属业务逻辑，铁律禁改，仅记录。
 - `common/css/page.css:368` `.sales-price` 价格色是橙红 #E22C08 —— 「价格=印章红」规则，全站价格组件用它，改动影响面大，纳入 P1 走查（建议单独在 P1-7 商品详情轮或价格统一时处理）。
 - `pages/plugins/scanpay/index/index.vue:34` 选中态 #E83B11 荧光橙红未动（本轮只清 #ddd），归 P2-1。
 - theme-red 印章红色阶已定：主 #9e2b22 / 浅 #eddcda / 中浅 #c98f89 / 更浅 #f4eae8 / 最浅 #faf5f4 / pair #b99359——各页走查时红色系一律对齐这套色阶。
