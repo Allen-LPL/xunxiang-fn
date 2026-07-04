@@ -124,7 +124,7 @@
     align-items: center;
     border-radius: 30rpx;
     background: #FFFFFF;
-    box-shadow: 0px 2rpx 8rpx 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 2rpx 8rpx 0px rgba(0, 0, 0, 0.06);
 }
 .oprate .icon {
     display: flex;

@@ -352,11 +352,11 @@
     }
     .upload-file-content { 
 		padding: 20rpx 24rpx 20rpx 32rpx;
-        box-shadow: 0px 0px 10rpx 0px rgba(207,207,207,0.5);
+        box-shadow: 0px 0px 10rpx 0px rgba(0, 0, 0, 0.06);
         background: #fff;
         border-radius: 8rpx;
 	}
     .box-shadow-img, .box-shadow-video {
-        box-shadow: 0px 0px 5px 0px rgba(207, 207, 207, 0.5);
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.06);
     }
 </style>

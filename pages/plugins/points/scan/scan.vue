@@ -444,7 +444,7 @@
                 video.srcObject = stream;
 
                 var frame = document.createElement('div');
-                frame.setAttribute('style', 'position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);width:62vw;height:62vw;border:3px solid #d6b345;border-radius:20px;box-shadow:0 0 0 9999px rgba(0,0,0,0.5);');
+                frame.setAttribute('style', 'position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);width:62vw;height:62vw;border:3px solid #b99359;border-radius:20px;box-shadow:0 0 0 9999px rgba(0,0,0,0.5);');
 
                 var tip = document.createElement('div');
                 tip.innerText = '将二维码放入框内，自动识别';

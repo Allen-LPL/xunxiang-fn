@@ -85,8 +85,8 @@
 }
 .plugins-label .lv view {
     padding: 4rpx 12rpx;
-    -webkit-box-shadow: 0px 1px 2px -1px rgb(0 0 0 / 60%);
-    box-shadow: 0px 1px 2px -1px rgb(0 0 0 / 60%);
+    -webkit-box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.06);
 }
 .plugins-label-img image {
     width: 80rpx !important;

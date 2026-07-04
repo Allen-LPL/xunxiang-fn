@@ -84,7 +84,7 @@ uni-page-head {
     left: auto;
     bottom: 320rpx;
     background: rgba(0, 0, 0, 0.6);
-    box-shadow: 0 0 20rpx rgb(0 0 0 / 30%);
+    box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.06);
     margin: 0 0 0 20rpx;
     border-radius: 100rpx;
     width: 62rpx;
@@ -322,7 +322,7 @@ button:before {
     padding: 20rpx;
 }
 .bottom-fixed .item {
-    box-shadow: 0rpx 4rpx 8rpx 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0rpx 4rpx 8rpx 0px rgba(0, 0, 0, 0.06);
 }
 
 /**
@@ -335,7 +335,7 @@ button:before {
     width: 100rpx;
     height: 100rpx;
     line-height: 86rpx;
-    box-shadow: 0 0 20rpx 4rpx #c4c4c4;
+    box-shadow: 0 0 20rpx 4rpx rgba(0, 0, 0, 0.06);
     font-size: 76rpx;
 }
 
