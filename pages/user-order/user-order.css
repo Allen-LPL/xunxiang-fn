@@ -9,7 +9,7 @@
 /* ============ 自定义金色导航 ============ */
 .order-page-points .order-nav-bar {
     flex-shrink: 0;
-    background: linear-gradient(180deg, #ecd9a8 0%, #e9d09a 100%);
+    background: #ffffff;
 }
 .order-page-points .order-nav-content {
     height: 88rpx;

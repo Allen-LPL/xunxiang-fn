@@ -173,7 +173,7 @@
     .eg-btn {
         flex-shrink: 0;
         padding: 14rpx 28rpx;
-        background: linear-gradient(90deg, #e6c068, #c99a2e);
+        background: #be8f5b;
         color: #fff;
         font-size: 26rpx;
         border-radius: 40rpx;
@@ -189,7 +189,7 @@
         display: inline-block;
         margin-top: 40rpx;
         padding: 16rpx 60rpx;
-        background: linear-gradient(90deg, #e6c068, #c99a2e);
+        background: #be8f5b;
         color: #fff;
         border-radius: 40rpx;
         font-size: 28rpx;

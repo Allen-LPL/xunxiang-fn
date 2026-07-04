@@ -6,7 +6,7 @@
 
 /* ============ 自定义导航 ============ */
 .goods-detail-points .nav-bar {
-    background: linear-gradient(180deg, #e8c98a 0%, #e2b86a 100%);
+    background: #ffffff;
     position: relative;
     z-index: 10;
 }

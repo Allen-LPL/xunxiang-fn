@@ -4,7 +4,7 @@
 .exchange-page {
     min-height: 100vh;
     padding: 0 55rpx 60rpx 55rpx;
-    background: linear-gradient(180deg, #f7e7c4 0%, #fbf0d9 26%, #fdf8ef 52%, #ffffff 100%);
+    background: #ffffff;
 }
 
 /**
@@ -19,7 +19,7 @@
     font-size: 56rpx;
     font-weight: 700;
     letter-spacing: 8rpx;
-    background: linear-gradient(180deg, #8f7410 0%, #cfab37 52%, #91760f 100%);
+    background: #b99359;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -30,7 +30,7 @@
     height: 6rpx;
     margin: 14rpx auto 0 auto;
     border-radius: 6rpx;
-    background: linear-gradient(90deg, rgba(202, 166, 53, 0) 0%, #caa635 50%, rgba(202, 166, 53, 0) 100%);
+    background: #b99359;
 }
 
 /**
@@ -88,7 +88,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(180deg, #ecdca6 0%, #d8b54e 100%);
+    background: #be8f5b;
     box-shadow: 0 16rpx 36rpx rgba(190, 150, 40, 0.32);
 }
 .ex-scan-circle-text {
@@ -112,7 +112,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(90deg, #ecd79a 0%, #d3b04a 50%, #c19f38 100%);
+    background: #be8f5b;
     box-shadow: 0 14rpx 30rpx rgba(190, 150, 40, 0.30);
 }
 .ex-confirm-hover {

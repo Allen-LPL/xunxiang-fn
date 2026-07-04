@@ -19,7 +19,7 @@
 
 /* ============ 顶部金色区 ============ */
 .user-points .header {
-    background: linear-gradient(180deg, #ecd9a8 0%, #f0e6cf 60%, #f3eee3 100%);
+    background: #ffffff;
     padding-bottom: 20rpx;
 }
 .user-points .nav-title-bar {
@@ -50,7 +50,7 @@
     display: inline-flex;
     margin-top: 14rpx;
     padding: 4rpx 16rpx 4rpx 12rpx;
-    background: linear-gradient(90deg, #d8bd6e, #c9a648);
+    background: #be8f5b;
     border-radius: 20rpx;
 }
 .user-points .member-badge-icon {

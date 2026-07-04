@@ -6,7 +6,7 @@
 
 /* 自定义金色导航 */
 .integral-points .nav-bar {
-    background: linear-gradient(180deg, #ecd9a8 0%, #e9d09a 100%);
+    background: #ffffff;
     position: relative;
     z-index: 10;
 }

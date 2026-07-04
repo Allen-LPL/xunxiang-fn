@@ -9,7 +9,7 @@ page {
 
 /* 金色导航 */
 .paytips .pt-nav-bar {
-    background: linear-gradient(180deg, #ecd9a8 0%, #e9d09a 100%);
+    background: #ffffff;
 }
 .paytips .pt-nav-content {
     height: 88rpx;
@@ -56,7 +56,7 @@ page {
     position: relative;
 }
 .paytips .pt-icon-success {
-    background: linear-gradient(135deg, #e8cd84 0%, #d4af56 100%);
+    background: #be8f5b;
     box-shadow: 0 10rpx 24rpx rgba(196, 158, 60, 0.3);
 }
 .paytips .pt-icon-fail {
@@ -120,7 +120,7 @@ page {
     font-size: 32rpx;
 }
 .paytips .pt-btn-primary {
-    background: linear-gradient(90deg, #e8cd84 0%, #d4af56 100%);
+    background: #be8f5b;
     color: #ffffff;
     margin-top: 72rpx;
 }

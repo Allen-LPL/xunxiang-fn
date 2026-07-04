@@ -39,11 +39,16 @@ grep -rniE '#dddddd|#ddd\b' common components/cart pages/user-address pages/plug
 
 ## 下轮注意
 
-- 下一项任务：**P0-3 清除金色渐变 7 处 → 驼金平涂 #BE8F5B**（goods-search:55、faq:255、paytips:59,123、exchange-success:50,86、user:53）。
+- 下一项任务：**P0-4 theme.css 渐变清零（8 处）**，含 :99 红渐变 #ff0036→#ffdbe2；theme-red 主题色值向印章红 #9E2B22 收敛（只改色值不动类结构）。
 - token 文件已就绪：`common/css/longzhuge.css`，页面可直接用 `var(--seal-red)` 等变量与 `.lz-*` 工具类（nvue 除外）。
 - `.lz-price` 用 ::before/::after 生成 `¥:` 与 ` 元`，模板侧只放数字即可；小程序 wxss 支持伪元素 content。
+- **首轮扫描的正则太窄**：金渐变实际 26 处（估 7）。以后每类断言都要用宽正则 + `grep -o 'linear-gradient(...' | sort | uniq -c` 人工过目兜底。
 
 ## 遗留观察（走查对应页面时处理，勿忘）
 
 - 微信绿 #1AAD19：`common/css/page.css` .bg-green、`components/cart/cart.vue:392` 滑动"移入收藏"按钮 —— 属促销感/微信系色，P1-13 购物车走查时统一处理。
 - `pages/goods-comment/goods-comment.css` 进度条还有荧光蓝 #0e90d2/#3bb4f2、橙 #F37B1D —— 冷色/荧光违规，需在商品评论相关走查时收敛为墨黑/驼金系（可并入 P1-7 或单列）。
+- **金渐变平涂后的耦合金光投影未动**（属 P1-17 投影轮）：faq:256、exchange-success:53、paytips:60、scan:92,116 等 rgba(196,158,60,.3) 金色 glow。
+- **米色底残留**：goods-detail.css:4 `#f5f1ea` 页底、faq.css `#f6f1e8` 系 —— 首轮米色 grep 漏检（正则只查了 5 个色值）。各页 P1 走查时改 --paper 白 / #FBFAF7。
+- 非金色渐变残留：paytips:63 粉（失败图标，P1-8）、faq:117-123 绿/青/蓝图标块（P1-10）、goods-detail:174 橙红促销条（P1-7）、goods-category:138 米色淡出条（P1-12）、插件与 DIY 内大量彩渐变（P2-1/P2-2）。
+- 金渐变文字曾用 background-clip:text（index.css member-name、scan.css hero title），现改平涂 #B99359，clip 机制保留未动——视觉为纯色金字，后续走查若统一字色可顺手简化。

@@ -5,7 +5,7 @@
     background: #fff;
 }
 .scan-button {
-    background: linear-gradient( 270deg, #F1E6C1 0%, #DBC583 100%);
+    background: #be8f5b;
     max-width: 300rpx;
 }
 .scan-button text {

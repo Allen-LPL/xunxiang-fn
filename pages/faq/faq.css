@@ -10,7 +10,7 @@ page {
 
 /* 金色导航 */
 .faq .faq-nav-bar {
-    background: linear-gradient(180deg, #f0dcae 0%, #ecd49c 100%);
+    background: #ffffff;
 }
 .faq .faq-nav-content {
     height: 88rpx;
@@ -47,7 +47,7 @@ page {
 .faq .faq-hero {
     position: relative;
     padding: 44rpx 40rpx 56rpx;
-    background: linear-gradient(180deg, #ecd49c 0%, #f4e7cb 60%, #f6f1e8 100%);
+    background: #ffffff;
     overflow: hidden;
 }
 .faq .faq-hero-main {
@@ -123,7 +123,7 @@ page {
     background: linear-gradient(135deg, #6fa8e6 0%, #4a82d6 100%);
 }
 .faq .faq-card-icon-3 {
-    background: linear-gradient(135deg, #f0c277 0%, #e2a544 100%);
+    background: #be8f5b;
 }
 .faq .faq-card-text {
     margin-left: 18rpx;
@@ -252,7 +252,7 @@ page {
     line-height: 92rpx;
     border-radius: 46rpx;
     padding: 0;
-    background: linear-gradient(90deg, #ecd79a 0%, #d4af56 100%);
+    background: #be8f5b;
     box-shadow: 0 12rpx 28rpx rgba(196, 158, 60, 0.34);
 }
 .faq .faq-service-hover {
