@@ -3,7 +3,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #f3eee3;
+    background-color: #ffffff;
 }
 
 /* ============ 自定义金色导航 ============ */
@@ -23,21 +23,22 @@
 .order-page-points .order-nav-arrow {
     width: 20rpx;
     height: 20rpx;
-    border-left: 4rpx solid #6b5a2e;
-    border-bottom: 4rpx solid #6b5a2e;
+    border-left: 4rpx solid #1a1a1a;
+    border-bottom: 4rpx solid #1a1a1a;
     transform: rotate(45deg);
     margin-right: 8rpx;
 }
 .order-page-points .order-nav-back-text {
     font-size: 27rpx;
-    color: #6b5a2e;
+    color: #1a1a1a;
 }
 .order-page-points .order-nav-title {
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     font-size: 34rpx;
-    color: #5a4a22;
+    color: #1a1a1a;
     font-weight: 500;
     letter-spacing: 2rpx;
 }
@@ -52,10 +53,10 @@
 }
 .order-page-points .order-tab text {
     font-size: 28rpx;
-    color: #7a6a3e;
+    color: #606060;
 }
 .order-page-points .order-tab-active text {
-    color: #c0392b;
+    color: #9e2b22;
     font-weight: bold;
 }
 .order-page-points .order-tab-line {
@@ -65,8 +66,8 @@
     transform: translateX(-50%);
     width: 48rpx;
     height: 5rpx;
-    background: #c0392b;
-    border-radius: 3rpx;
+    background: #9e2b22;
+    border-radius: 0;
 }
 
 /* ============ 滚动列表 ============ */
@@ -77,17 +78,16 @@
     padding: 20rpx 24rpx;
 }
 .order-page-points .list-item {
-    background-color: #ffffff;
-    border-radius: 16rpx;
+    background-color: #fbfaf7;
+    border-radius: 0;
     padding: 24rpx 24rpx 20rpx;
     margin-bottom: 24rpx;
-    box-shadow: 0 6rpx 20rpx rgba(0, 0, 0, 0.04);
 }
 
 /* 订单头 */
 .order-page-points .order-head {
     padding-bottom: 20rpx;
-    border-bottom: 2rpx solid #f4f4f4;
+    border-bottom: 2rpx solid #f1eee8;
 }
 .order-page-points .order-date {
     font-size: 24rpx;
@@ -95,18 +95,18 @@
 }
 .order-page-points .order-status-name {
     font-size: 26rpx;
-    color: #e1574b;
+    color: #9e2b22;
 }
 
 /* 商品行 */
 .order-page-points .order-goods-row {
     padding: 24rpx 0;
-    border-bottom: 2rpx dashed #f0f0f0;
+    border-bottom: 2rpx dashed #f1eee8;
 }
 .order-page-points .order-goods-img {
     width: 140rpx;
     height: 140rpx;
-    border-radius: 12rpx;
+    border-radius: 0;
     flex-shrink: 0;
 }
 .order-page-points .order-goods-info {
@@ -140,9 +140,9 @@
     right: 0;
     bottom: 0;
     font-size: 22rpx;
-    color: #3a8ee6;
-    border: 2rpx solid #3a8ee6;
-    border-radius: 20rpx;
+    color: #b99359;
+    border: 2rpx solid #b99359;
+    border-radius: 0;
     padding: 2rpx 16rpx;
     background-color: #ffffff;
 }
@@ -158,8 +158,9 @@
     font-weight: bold;
 }
 .order-page-points .order-total-points {
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
     font-size: 30rpx;
-    color: #e1574b;
+    color: #9e2b22;
     font-weight: bold;
     margin-left: 6rpx;
 }
@@ -167,7 +168,7 @@
 /* 操作按钮区（保留原全局按钮样式，仅控制容器） */
 .order-page-points .item-operation {
     padding-top: 20rpx;
-    border-top: 2rpx solid #f4f4f4;
+    border-top: 2rpx solid #f1eee8;
     text-align: right;
 }
 .order-page-points .item-operation button {

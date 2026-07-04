@@ -29,7 +29,7 @@
 - [x] **P1-11 pages/login 走查**：输入框冷灰 #F9F9F9 底 25px 胶囊→透明底下划线式（1px #e8e4dc）；autofill 底色 #f9f9f9→白；登录弹层 32rpx 圆角→直角、分割线 #eee→#f1eee8；主按钮走 bg-main（已印章红）胶囊平涂合规。
 - [x] **P1-12 pages/goods-category + goods-search 走查**：category 页 9 条彩色渐变装饰条（荧光粉/蓝/绿/紫系，禁止项）→统一 #f1eee8 平涂直角；冷灰 #f5f5f5×5→#fbfaf7；分割线→#f1eee8；底部浮动导航投影 0.16→0.06（浮层上限）；search 页米色页底×2→纯白、搜索条/商品卡去投影去圆角、积分数字 #bb9b2c→宋体印章红、兑换按钮金描边胶囊→印章红直角、搜索图标杂金→御金（与首页 P1-3 完全同款处理）。
 - [x] **P1-13 pages/cart + components/cart 走查**：微信绿 #1AAD19 全项目清零（滑动收藏按钮→驼金、page.css green 工具类/switch 组件/distribution 图标→千里江山青绿 #2f4a4a）；error-msg 灰光投影删除；realstore-nav 奶油渐变→纯白；数量步进器描边 #efefef→#e8e4dc；优惠明细 chip/弹窗标题底 #f2f2f2/#eee/#f6f6f6→#f1eee8/#fbfaf7；结算按钮走 bg-main（已印章红）✅；价格走 .sales-price（全站统一，P1-18 复核轮处理）。
-- [ ] **P1-14 pages/user-order + user-order-detail 走查**：订单卡片去框（留白分组）、状态色收敛（禁荧光/冷色）、按钮形制统一。
+- [x] **P1-14 pages/user-order + user-order-detail 走查**：列表页米色页底→纯白、订单卡去圆角去投影 #fbfaf7、导航暗金→墨黑宋体、tab 砖红 #c0392b→印章红+下划线直角、状态/合计积分 #e1574b→印章红（积分数字宋体）、售后按钮冷蓝 #3a8ee6 描边胶囊→御金描边直角、分割线全部 #f1eee8、商品图直角；详情页虚拟销售提示荧光橙/奶油底→印章红/#fbfaf7/#f1eee8；底部合并支付条投影 0.06 浮层合规。
 - [ ] **P1-15 pages/user-address(+save) 走查**：输入框形制、去 #ddd（P0-5 已清主文件）、按钮统一。
 - [ ] **P1-16 components/ 共享业务组件走查**（goods-buy、payment、search、share-popup 等）：按钮/弹层形制统一，弹层投影 opacity≤0.06。
 - [ ] **P1-17 投影清理（核心链路）**：上述已走查页面外，grep box-shadow 复核核心链路残留，页面内投影清零（浮层除外 ≤0.06）。

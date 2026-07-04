@@ -39,7 +39,7 @@ grep -rniE '#dddddd|#ddd\b' common components/cart pages/user-address pages/plug
 
 ## 下轮注意
 
-- 下一项任务：**P1-14 pages/user-order + user-order-detail 走查**（订单卡片去框、状态色收敛、按钮形制统一）。
+- 下一项任务：**P1-15 pages/user-address(+save) 走查**（输入框形制、按钮统一；#ddd 已在 P0-5 清）。
 - 微信绿已全项目清零 ✅（"遗留观察"第 1 条完成）；"成功/正向"语义色定为千里江山青绿 #2f4a4a。
 - **坑：部分 css 文件是 CRLF 行尾**（goods-category.css 等，且内部混合）。python open().read()/write() 会静默转 LF 造成全文件 diff——改用 bytes 模式或改完后恢复 CRLF。sed 不受影响。
 - FAQ 分类图标色板定案：青绿 #2f4a4a / 灰绿 #547070 / 青花蓝 #3a3f8f（规范明文例外）/ 驼金 #be8f5b——多分类图标需要区分色时用这套。
