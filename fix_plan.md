@@ -28,7 +28,7 @@
 - [x] **P1-10 pages/faq 走查**：页底米色 #f6f1e8→纯白×2；导航暗金→墨黑+标题宋体；hero FAQ 金字→御金 token、主标题 46→44rpx 宋体；分类卡/QA 面板去圆角去金光投影 #fbfaf7、active 态御金细描边；冷色渐变图标×3→青绿/灰绿/青花蓝平涂（青花蓝为规范允许例外）；搜索框白底+#e8e4dc 描边；Q 徽章米金→白底御金；答案块米色→白；客服按钮金光投影删除；装饰预算：hero deco 为每屏唯一装饰 ✅。
 - [x] **P1-11 pages/login 走查**：输入框冷灰 #F9F9F9 底 25px 胶囊→透明底下划线式（1px #e8e4dc）；autofill 底色 #f9f9f9→白；登录弹层 32rpx 圆角→直角、分割线 #eee→#f1eee8；主按钮走 bg-main（已印章红）胶囊平涂合规。
 - [x] **P1-12 pages/goods-category + goods-search 走查**：category 页 9 条彩色渐变装饰条（荧光粉/蓝/绿/紫系，禁止项）→统一 #f1eee8 平涂直角；冷灰 #f5f5f5×5→#fbfaf7；分割线→#f1eee8；底部浮动导航投影 0.16→0.06（浮层上限）；search 页米色页底×2→纯白、搜索条/商品卡去投影去圆角、积分数字 #bb9b2c→宋体印章红、兑换按钮金描边胶囊→印章红直角、搜索图标杂金→御金（与首页 P1-3 完全同款处理）。
-- [ ] **P1-13 pages/cart + components/cart 走查**：结算按钮墨黑/印章红、价格格式、去圆角胶囊。
+- [x] **P1-13 pages/cart + components/cart 走查**：微信绿 #1AAD19 全项目清零（滑动收藏按钮→驼金、page.css green 工具类/switch 组件/distribution 图标→千里江山青绿 #2f4a4a）；error-msg 灰光投影删除；realstore-nav 奶油渐变→纯白；数量步进器描边 #efefef→#e8e4dc；优惠明细 chip/弹窗标题底 #f2f2f2/#eee/#f6f6f6→#f1eee8/#fbfaf7；结算按钮走 bg-main（已印章红）✅；价格走 .sales-price（全站统一，P1-18 复核轮处理）。
 - [ ] **P1-14 pages/user-order + user-order-detail 走查**：订单卡片去框（留白分组）、状态色收敛（禁荧光/冷色）、按钮形制统一。
 - [ ] **P1-15 pages/user-address(+save) 走查**：输入框形制、去 #ddd（P0-5 已清主文件）、按钮统一。
 - [ ] **P1-16 components/ 共享业务组件走查**（goods-buy、payment、search、share-popup 等）：按钮/弹层形制统一，弹层投影 opacity≤0.06。

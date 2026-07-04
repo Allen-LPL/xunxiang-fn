@@ -165,7 +165,7 @@
         width: 60%;
         height: 100%;
         border-radius: 1000px;
-        background: #1aad19;
+        background: #2f4a4a;
     }
     .switch-container .disabled {
         position: absolute;

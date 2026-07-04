@@ -525,7 +525,7 @@ button:before {
     border: dashed 2rpx #f6c133 !important;
 }
 .br-dashed-green {
-    border: dashed 2rpx #1AAD19 !important;
+    border: dashed 2rpx #2f4a4a !important;
 }
 .br-dashed-grey {
     border: dashed 2rpx #d6d6d6 !important;
@@ -570,7 +570,7 @@ button:before {
     color: #F37B1D !important;
 }
 .cr-green {
-    color: #1AAD19 !important;
+    color: #2f4a4a !important;
 }
 .cr-blue {
     color: #2196F3 !important;
@@ -590,7 +590,7 @@ button:before {
     background-color: #fff !important;
 }
 .bg-green {
-    background-color: #1AAD19 !important;
+    background-color: #2f4a4a !important;
 }
 .bg-red {
     background-color: #9E2B22 !important;

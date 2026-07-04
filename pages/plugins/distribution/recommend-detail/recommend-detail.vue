@@ -8,7 +8,7 @@
                     <view class="text-size cr-base fw dis-inline-block va-m title">{{ data.title }}</view>
                     <button class="round bg-white br-green cr-green fr share-submit" type="default" size="mini" hover-class="none" @tap="share_event" :data-index="index">
                         <view class="dis-inline-block va-m">
-                            <uni-icons type="redo" size="34rpx" color="#1AAD19"></uni-icons>
+                            <uni-icons type="redo" size="34rpx" color="#2f4a4a"></uni-icons>
                         </view>
                         <text class="va-m">{{$t('common.share')}}</text>
                     </button>

@@ -389,7 +389,7 @@
                     {
                         text: this.$t('goods-detail.goods-detail.dco1sc'),
                         style: {
-                            backgroundColor: '#1AAD19',
+                            backgroundColor: '#be8f5b',
                         },
                     },
                     {
@@ -1475,7 +1475,6 @@
     }
     .cart-goods-item .error-msg text {
         padding: 2rpx 10rpx;
-        box-shadow: 0 2px 10px rgb(181 181 181 / 95%);
     }
 
     /**
@@ -1500,7 +1499,7 @@
         width: 30px;
         border-width: 0 1px;
         border-style: solid;
-        border-color: #efefef;
+        border-color: #e8e4dc;
     }
     .cart-number-content .number-submit,
     .cart-number-content .number-input {
@@ -1548,7 +1547,7 @@
     }
     .bottom-fixed .price .discount-details {
         height: 32rpx;
-        background: #f2f2f2;
+        background: #f1eee8;
         padding: 0 12rpx;
         border-radius: 16rpx;
         margin-left: 18rpx;
@@ -1611,7 +1610,7 @@
     }
     .realstore-nav {
         height: 92rpx;
-        background: linear-gradient(180deg, #fffaf1 0%, #ffffff 100%);
+        background: #ffffff;
     }
 
     /**
@@ -1631,7 +1630,7 @@
         position: absolute;
         left: 0;
         right: 0;
-        background: #f6f6f6;
+        background: #fbfaf7;
         top: 0;
         z-index: 2;
         padding: 24rpx;
@@ -1678,7 +1677,7 @@
         line-height: 40rpx;
         height: 40rpx;
         font-size: 20rpx;
-        background: #eee;
+        background: #f1eee8;
         border-radius: 20rpx;
     }
 </style>
