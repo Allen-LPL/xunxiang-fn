@@ -1,7 +1,7 @@
 /* 积分商城-地址管理 —— 按 Figma(9-1723) 还原，单位 rpx */
 .address-points {
     min-height: 100vh;
-    background-color: #f3eee3;
+    background-color: #ffffff;
     padding-bottom: 140rpx;
 }
 
@@ -21,21 +21,22 @@
 .address-points .addr-nav-arrow {
     width: 20rpx;
     height: 20rpx;
-    border-left: 4rpx solid #6b5a2e;
-    border-bottom: 4rpx solid #6b5a2e;
+    border-left: 4rpx solid #1a1a1a;
+    border-bottom: 4rpx solid #1a1a1a;
     transform: rotate(45deg);
     margin-right: 8rpx;
 }
 .address-points .addr-nav-back-text {
     font-size: 27rpx;
-    color: #6b5a2e;
+    color: #1a1a1a;
 }
 .address-points .addr-nav-title {
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     font-size: 34rpx;
-    color: #5a4a22;
+    color: #1a1a1a;
     font-weight: 500;
     letter-spacing: 2rpx;
 }
@@ -45,21 +46,20 @@
     padding: 24rpx;
 }
 .address-points .addr-card {
-    background-color: #ffffff;
-    border-radius: 16rpx;
+    background-color: #fbfaf7;
+    border-radius: 0;
     margin-bottom: 24rpx;
-    box-shadow: 0 6rpx 20rpx rgba(0, 0, 0, 0.04);
 }
 .address-points .addr-card-top {
     padding: 28rpx 28rpx 24rpx;
-    border-bottom: 2rpx solid #f4f4f4;
+    border-bottom: 2rpx solid #f1eee8;
 }
 .address-points .addr-alias {
     display: inline-block;
     font-size: 20rpx;
-    color: #c0392b;
-    border: 2rpx solid #e6b8b2;
-    border-radius: 6rpx;
+    color: #9e2b22;
+    border: 2rpx solid #c98f89;
+    border-radius: 0;
     padding: 0 8rpx;
     margin-right: 10rpx;
     vertical-align: middle;
@@ -115,11 +115,11 @@
     box-sizing: border-box;
 }
 .address-points .addr-op-default.is-checked text {
-    color: #c0392b;
+    color: #9e2b22;
 }
 .address-points .addr-op-default.is-checked .addr-radio {
-    border-color: #e1574b;
-    background-color: #e1574b;
+    border-color: #9e2b22;
+    background-color: #9e2b22;
 }
 .address-points .addr-op-default.is-checked .addr-radio::after {
     content: '';
@@ -149,7 +149,7 @@
     height: 84rpx;
     line-height: 84rpx;
     margin: 0 8rpx;
-    border-radius: 12rpx;
+    border-radius: 0;
     font-size: 30rpx;
     text-align: center;
 }
@@ -159,7 +159,7 @@
     color: #666666;
 }
 .address-points .addr-btn-add {
-    background-color: #e74c3c;
+    background-color: #9e2b22;
     color: #ffffff;
 }
 
