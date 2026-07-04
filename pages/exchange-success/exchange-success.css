@@ -1,0 +1,94 @@
+/* 积分商城-兑换成功 —— 按 Figma(9-2459) 还原，单位 rpx */
+.exch-success {
+    min-height: 100vh;
+    background-color: #f5f1ea;
+}
+
+/* 金色导航 */
+.exch-success .es-nav-bar {
+    background: linear-gradient(180deg, #ecd9a8 0%, #e9d09a 100%);
+}
+.exch-success .es-nav-content {
+    height: 88rpx;
+    padding: 0 24rpx;
+    position: relative;
+}
+.exch-success .es-nav-back {
+    position: relative;
+    z-index: 2;
+}
+.exch-success .es-nav-arrow {
+    width: 20rpx;
+    height: 20rpx;
+    border-left: 4rpx solid #6b5a2e;
+    border-bottom: 4rpx solid #6b5a2e;
+    transform: rotate(45deg);
+    margin-right: 8rpx;
+}
+.exch-success .es-nav-back-text {
+    font-size: 27rpx;
+    color: #6b5a2e;
+}
+.exch-success .es-nav-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 34rpx;
+    color: #5a4a22;
+    font-weight: 500;
+    letter-spacing: 2rpx;
+}
+
+/* 主体 */
+.exch-success .es-body {
+    padding: 120rpx 48rpx 0;
+}
+.exch-success .es-check {
+    width: 160rpx;
+    height: 160rpx;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #e8cd84 0%, #d4af56 100%);
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 10rpx 24rpx rgba(196, 158, 60, 0.3);
+}
+.exch-success .es-check-mark {
+    position: absolute;
+    left: 50rpx;
+    top: 60rpx;
+    width: 56rpx;
+    height: 28rpx;
+    border: solid #ffffff;
+    border-width: 0 0 8rpx 8rpx;
+    transform: rotate(-45deg);
+}
+.exch-success .es-title {
+    font-size: 40rpx;
+    color: #333333;
+    font-weight: bold;
+    margin-top: 44rpx;
+}
+.exch-success .es-tips {
+    font-size: 26rpx;
+    color: #999999;
+    margin-top: 24rpx;
+}
+
+/* 按钮 */
+.exch-success .es-btn {
+    height: 88rpx;
+    line-height: 88rpx;
+    border-radius: 12rpx;
+    font-size: 32rpx;
+    margin-top: 36rpx;
+}
+.exch-success .es-btn-yes {
+    background: linear-gradient(90deg, #e8cd84 0%, #d4af56 100%);
+    color: #ffffff;
+}
+.exch-success .es-btn-no {
+    background-color: #ffffff;
+    border: 2rpx solid #eeeeee;
+    color: #333333;
+    margin-top: 24rpx;
+}

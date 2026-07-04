@@ -1,0 +1,167 @@
+/* 积分商城-地址管理 —— 按 Figma(9-1723) 还原，单位 rpx */
+.address-points {
+    min-height: 100vh;
+    background-color: #f3eee3;
+    padding-bottom: 140rpx;
+}
+
+/* 金色导航 */
+.address-points .addr-nav-bar {
+    background: linear-gradient(180deg, #ecd9a8 0%, #e9d09a 100%);
+}
+.address-points .addr-nav-content {
+    height: 88rpx;
+    padding: 0 24rpx;
+    position: relative;
+}
+.address-points .addr-nav-back {
+    position: relative;
+    z-index: 2;
+}
+.address-points .addr-nav-arrow {
+    width: 20rpx;
+    height: 20rpx;
+    border-left: 4rpx solid #6b5a2e;
+    border-bottom: 4rpx solid #6b5a2e;
+    transform: rotate(45deg);
+    margin-right: 8rpx;
+}
+.address-points .addr-nav-back-text {
+    font-size: 27rpx;
+    color: #6b5a2e;
+}
+.address-points .addr-nav-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 34rpx;
+    color: #5a4a22;
+    font-weight: 500;
+    letter-spacing: 2rpx;
+}
+
+/* 列表 */
+.address-points .addr-body {
+    padding: 24rpx;
+}
+.address-points .addr-card {
+    background-color: #ffffff;
+    border-radius: 16rpx;
+    margin-bottom: 24rpx;
+    box-shadow: 0 6rpx 20rpx rgba(0, 0, 0, 0.04);
+}
+.address-points .addr-card-top {
+    padding: 28rpx 28rpx 24rpx;
+    border-bottom: 2rpx solid #f4f4f4;
+}
+.address-points .addr-alias {
+    display: inline-block;
+    font-size: 20rpx;
+    color: #c0392b;
+    border: 2rpx solid #e6b8b2;
+    border-radius: 6rpx;
+    padding: 0 8rpx;
+    margin-right: 10rpx;
+    vertical-align: middle;
+}
+.address-points .addr-name {
+    font-size: 32rpx;
+    color: #333333;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.address-points .addr-tel {
+    flex-shrink: 0;
+    font-size: 30rpx;
+    color: #333333;
+}
+.address-points .addr-detail {
+    font-size: 26rpx;
+    color: #999999;
+    margin-top: 16rpx;
+    line-height: 1.5;
+}
+.address-points .addr-card-ops {
+    padding: 18rpx 28rpx;
+}
+.address-points .addr-op {
+    font-size: 26rpx;
+    color: #999999;
+}
+.address-points .addr-op text {
+    font-size: 26rpx;
+    color: #999999;
+}
+.address-points .addr-op-del {
+    margin-left: 40rpx;
+}
+.address-points .addr-op-icon {
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 8rpx;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* 设为默认单选 */
+.address-points .addr-radio {
+    width: 30rpx;
+    height: 30rpx;
+    border: 2rpx solid #cccccc;
+    border-radius: 50%;
+    margin-right: 10rpx;
+    position: relative;
+    box-sizing: border-box;
+}
+.address-points .addr-op-default.is-checked text {
+    color: #c0392b;
+}
+.address-points .addr-op-default.is-checked .addr-radio {
+    border-color: #e1574b;
+    background-color: #e1574b;
+}
+.address-points .addr-op-default.is-checked .addr-radio::after {
+    content: '';
+    position: absolute;
+    left: 9rpx;
+    top: 4rpx;
+    width: 7rpx;
+    height: 13rpx;
+    border: solid #ffffff;
+    border-width: 0 3rpx 3rpx 0;
+    transform: rotate(45deg);
+}
+
+/* 底部操作 */
+.address-points .addr-bottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 16rpx 24rpx;
+    padding-bottom: calc(16rpx + env(safe-area-inset-bottom));
+    background-color: #ffffff;
+    box-shadow: 0 -4rpx 16rpx rgba(0, 0, 0, 0.06);
+    z-index: 99;
+}
+.address-points .addr-btn {
+    height: 84rpx;
+    line-height: 84rpx;
+    margin: 0 8rpx;
+    border-radius: 12rpx;
+    font-size: 30rpx;
+    text-align: center;
+}
+.address-points .addr-btn-import {
+    background-color: #ffffff;
+    border: 2rpx solid #dddddd;
+    color: #666666;
+}
+.address-points .addr-btn-add {
+    background-color: #e74c3c;
+    color: #ffffff;
+}
+
+.address-points .op-icon-edit { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iIzk5OTk5OSIgZD0iTTMgMTcuMjVWMjFoMy43NUwxNy44MSA5Ljk0bC0zLjc1LTMuNzVMMyAxNy4yNXpNMjAuNzEgNy4wNGExIDEgMCAwIDAgMC0xLjQxbC0yLjM0LTIuMzRhMSAxIDAgMCAwLTEuNDEgMGwtMS44MyAxLjgzIDMuNzUgMy43NSAxLjgzLTEuODN6Ii8+PC9zdmc+"); }
+.address-points .op-icon-del { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iIzk5OTk5OSIgZD0iTTYgN2gxMmwtMSAxNEg3TDYgN3ptMy0zaDZsMSAyaDR2Mkg0VjZoNGwxLTJ6bTEgNnY4aDJ2LThoLTJ6bTQgMHY4aDJ2LThoLTJ6Ii8+PC9zdmc+"); }

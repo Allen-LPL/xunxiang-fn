@@ -1,0 +1,49 @@
+# fix_plan.md — 龙珠阁 UI 走查任务清单
+
+> 规范依据：`docs/design.longzhuge.md`（权威版）。每轮只做一项，完成后勾选。
+> 扫描范围：`pages/`、`components/`、`common/`、`App.vue`。**排除 `uni_modules/`（第三方，不改）与 `*.old.*`（遗留死码）。**
+> 生成时间：2026-07-04（Ralph 第 1 轮全量扫描）
+
+---
+
+## P0 — 基建与禁止项清零（阻塞性）
+
+- [ ] **P0-1 建立龙珠阁设计 token 文件** `common/css/longzhuge.css`：§1.1 全局 token（--paper/--ink/--ink-soft/--camel-gold/--imperial-gold/--seal-red）+ §2 六系列主题类（`.series-qinghua` 等，含暗场底色/主题色变量），在 `App.vue` 全局样式引入。仅新增文件，不动业务。
+- [ ] **P0-2 清除微信红系（5 处）**：`common/css/page.css:596`（#E64340 !important）、`components/cart/cart.vue:398`（js 内联 backgroundColor '#E64340'→ 改为印章红色值字符串，属样式值可改）、`pages/goods-comment/goods-comment.css:35`（#dd514c）→ 统一印章红 `#9E2B22`。（goods-detail.old.* 属死码不改）
+- [ ] **P0-3 清除金色渐变 → 驼金平涂 #BE8F5B（7 处）**：`pages/goods-search/goods-search.css:55`、`pages/faq/faq.css:255`、`pages/paytips/paytips.css:59,123`、`pages/exchange-success/exchange-success.css:50,86`、`pages/user/user.css:53`。
+- [ ] **P0-4 theme.css 渐变清零（8 处）**：`common/css/theme.css` 内全部 gradient（含 :99 红色渐变 #ff0036→#ffdbe2）改平涂；红色主题色向印章红 #9E2B22 靠拢（只动 theme-red 相关色值，不动类结构）。
+- [ ] **P0-5 冷灰 #DDD 描边 → 淡暖灰 #E8E4DC**：`common/css/lib.css`、`common/css/page.css`、`common/js/common/common.js`（DIY 样式默认值中的色值字符串）、`components/cart/cart.vue`、`pages/user-address/user-address.css`、`pages/plugins/scanpay/index/index.vue`。（video/ask/live/weixinliveplayer 等非核心插件延后到 P2-1）
+
+## P1 — 核心链路逐页走查（首页→商品→兑换→个人中心）
+
+- [ ] **P1-1 全局导航与 tabbar**：`pages.json` 各页 navigationBar 纯白无线条；tabbar 墨黑 #1A1A1A 底/御金选中态或纯白底墨黑字（当前 transparent，需确认自绘 tabbar 组件位置并统一）；`App.vue` globalData 主题默认值核对。
+- [ ] **P1-2 排印基建**：全局引入思源宋体 font-family 工具类（`.font-serif`、「」section 标题样式、价格 `¥:xxxx 元` 格式样式类）到 longzhuge.css；≥14px 才用宋体的注释说明。
+- [ ] **P1-3 pages/index（首页/积分商城）走查**：圆角≤2px、去投影、去卡片描边、图占屏出血、overlay 压暗渐变、主标题宋体 40-44px、单屏≤3 信息组。
+- [ ] **P1-4 pages/user（个人中心）走查**：user.css 金渐变已在 P0-3 清；本轮处理圆角/投影/描边/排印/价格格式。
+- [ ] **P1-5 pages/plugins/points/index（兑换中心）走查**：index.css 渐变、圆角、卡片盒子去框化、积分大数字宋体 56-64px。
+- [ ] **P1-6 pages/plugins/points/exchange-goods + scan 走查**：渐变、圆角、按钮形制（白场墨黑底/印章红底）。
+- [ ] **P1-7 pages/goods-detail（商品详情）走查**：T3 映射——顶部沉浸图+白场参数区；价格印章红 + `¥:xxxx 元` 格式；去投影去描边。
+- [ ] **P1-8 pages/exchange-success + paytips 走查**：P0-3 后残留的金色面积≤5% 核查、圆角、按钮形制。
+- [ ] **P1-9 pages/user-integral（积分明细）走查**：大数字宋体、去框、分割线 ≤1px #F1EEE8。
+- [ ] **P1-10 pages/faq 走查**：去框化、section 标题「」、装饰元素≤1/屏。
+- [ ] **P1-11 pages/login 走查**：输入框下划线式或 #E8E4DC 描边、主按钮墨黑底白字、去圆角胶囊渐变。
+- [ ] **P1-12 pages/goods-category + goods-search 走查**：tab/筛选样式统一、卡片去框、每屏≤2.5 卡片密度（列表间距）。
+- [ ] **P1-13 pages/cart + components/cart 走查**：结算按钮墨黑/印章红、价格格式、去圆角胶囊。
+- [ ] **P1-14 pages/user-order + user-order-detail 走查**：订单卡片去框（留白分组）、状态色收敛（禁荧光/冷色）、按钮形制统一。
+- [ ] **P1-15 pages/user-address(+save) 走查**：输入框形制、去 #ddd（P0-5 已清主文件）、按钮统一。
+- [ ] **P1-16 components/ 共享业务组件走查**（goods-buy、payment、search、share-popup 等）：按钮/弹层形制统一，弹层投影 opacity≤0.06。
+- [ ] **P1-17 投影清理（核心链路）**：上述已走查页面外，grep box-shadow 复核核心链路残留，页面内投影清零（浮层除外 ≤0.06）。
+- [ ] **P1-18 全量复核轮**：§5 清单逐项 grep 断言（禁止色=0、金渐变=0、核心页圆角≤2px 或存量平涂胶囊）+ 抽查 diff，确认无新增违规。
+
+## P2 — 非核心插件与资源（不阻塞完成承诺）
+
+- [ ] **P2-1 非核心插件禁止项清扫**：`pages/plugins/`（coin/wallet/coupon/signin/ask/video/live/weixinliveplayer/binding/magic/distribution 等）内 #ddd、渐变按红/金规则批量替换（每轮 1-2 个插件）。
+- [ ] **P2-2 diy 组件（tabs-carousel/tabs-magic 等）渐变与圆角收敛**：注意 DIY 为服务端配置驱动，仅改组件默认样式不改配置解析逻辑。
+- [ ] **P2-3 `.old.*` 遗留文件处理**：确认无引用后在 AGENT_NOTES 标记为死码（不删除、不修改，避免误伤）。
+- [ ] **P2-4 运营 banner/静态图资源走查**：`static/` 内与新体系冲突的促销感图片列「需重制」清单。
+- [ ] **P2-5 系列主题机制落地**（data-series 换肤示例应用到系列落地页/详情页，视后端字段支持情况，纯样式层）。
+
+---
+
+## 完成条件
+P0 + P1 全部勾选，且 P1-18 复核无新增违规 → 终检报告 → 输出完成承诺。

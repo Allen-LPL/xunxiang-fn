@@ -1,0 +1,299 @@
+/* 积分商城首页 —— 按 Figma(750 设计稿) 1:1 还原，单位 rpx */
+.points-home {
+    min-height: 100vh;
+    background-color: #f5f1ea;
+    padding-bottom: 140rpx;
+}
+
+/* ============ 顶部金色 Banner 区 ============ */
+.top-banner {
+    width: 100%;
+    background: linear-gradient(180deg, #e8b964 0%, #d99b3f 60%, #c8842f 100%);
+    overflow: hidden;
+}
+.top-banner .banner-img {
+    width: 100%;
+}
+
+/* ============ 主体内容（上浮覆盖 Banner 底部） ============ */
+.main-content {
+    margin-top: -120rpx;
+    padding: 0 28rpx;
+    z-index: 2;
+}
+
+/* ============ 会员积分卡 ============ */
+.member-card {
+    height: 166rpx;
+    background-color: #fffdf8;
+    border: 2rpx solid #e8cd84;
+    border-radius: 20rpx;
+    box-shadow: 0 8rpx 24rpx rgba(180, 140, 40, 0.12);
+    padding: 0 32rpx;
+    box-sizing: border-box;
+}
+.member-card .avatar {
+    width: 88rpx;
+    height: 88rpx;
+    border: 2rpx solid #e8cd84;
+    flex-shrink: 0;
+}
+.member-card .member-info {
+    overflow: hidden;
+}
+.member-card .member-name {
+    font-size: 28rpx;
+    font-weight: bold;
+    color: #383737;
+    background: linear-gradient(0deg, #8f7410 0%, #cfab37 40%, #91760f 70%, #cfab37 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: #b8932f;
+}
+.member-card .member-identity {
+    font-size: 18rpx;
+    color: #383737;
+    opacity: 0.55;
+    margin-top: 8rpx;
+    letter-spacing: 1rpx;
+}
+.member-card .member-points {
+    flex-shrink: 0;
+    padding-left: 20rpx;
+}
+.member-card .points-label {
+    font-size: 20rpx;
+    color: #343434;
+}
+.member-card .points-value {
+    font-size: 44rpx;
+    color: #343434;
+    line-height: 1.1;
+    margin-top: 6rpx;
+}
+
+/* ============ 搜索框 ============ */
+.search-bar {
+    height: 88rpx;
+    background-color: #ffffff;
+    border-radius: 44rpx;
+    margin-top: 30rpx;
+    padding: 0 32rpx;
+    box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.04);
+}
+.search-bar .search-icon {
+    width: 30rpx;
+    height: 30rpx;
+    border: 4rpx solid #c8a04a;
+    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0;
+}
+.search-bar .search-icon::after {
+    content: '';
+    position: absolute;
+    right: -10rpx;
+    bottom: -6rpx;
+    width: 14rpx;
+    height: 4rpx;
+    background-color: #c8a04a;
+    transform: rotate(45deg);
+    border-radius: 4rpx;
+}
+.search-bar .search-placeholder {
+    font-size: 28rpx;
+    color: #a9a9a9;
+    margin-left: 22rpx;
+}
+
+/* ============ 筛选 Tab ============ */
+.filter-tabs {
+    margin-top: 36rpx;
+    padding: 0 8rpx;
+}
+.filter-tabs .filter-tab {
+    margin-right: 56rpx;
+    padding: 10rpx 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.filter-tabs .filter-tab text {
+    font-size: 26rpx;
+    color: #5f5f5f;
+}
+.filter-tabs .filter-tab-active text {
+    font-size: 26rpx;
+    color: #1e1e1e;
+    font-weight: bold;
+}
+.filter-tabs .tab-underline {
+    left: 0;
+    bottom: -2rpx;
+    width: 100%;
+    height: 6rpx;
+    background: linear-gradient(90deg, #e8c266, #c8842f);
+    border-radius: 4rpx;
+}
+.filter-tabs .sort-arrows {
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 10rpx;
+}
+.filter-tabs .arrow-up,
+.filter-tabs .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 8rpx solid transparent;
+    border-right: 8rpx solid transparent;
+}
+.filter-tabs .arrow-up {
+    border-bottom: 9rpx solid #c0c0c0;
+    margin-bottom: 4rpx;
+}
+.filter-tabs .arrow-down {
+    border-top: 9rpx solid #c0c0c0;
+}
+
+/* ============ 商品兑换网格 ============ */
+.goods-grid {
+    margin-top: 28rpx;
+}
+.goods-card {
+    width: 332rpx;
+    background-color: #ffffff;
+    border-radius: 16rpx;
+    overflow: hidden;
+    margin-bottom: 24rpx;
+    box-shadow: 0 6rpx 20rpx rgba(0, 0, 0, 0.05);
+}
+.goods-card .goods-img-box {
+    width: 100%;
+    height: 332rpx;
+    overflow: hidden;
+}
+.goods-card .goods-img {
+    width: 100%;
+    height: 332rpx;
+}
+.goods-card .goods-info {
+    padding: 16rpx 20rpx 20rpx;
+}
+.goods-card .goods-title {
+    font-size: 25rpx;
+    color: #414141;
+    line-height: 1.4;
+    min-height: 70rpx;
+}
+.goods-card .goods-bottom {
+    margin-top: 12rpx;
+}
+.goods-card .goods-points-label {
+    font-size: 16rpx;
+    color: #373839;
+    opacity: 0.69;
+}
+.goods-card .goods-points-value {
+    font-size: 44rpx;
+    font-weight: 300;
+    color: #bb9b2c;
+}
+.goods-card .exchange-btn {
+    min-width: 66rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    padding: 0 16rpx;
+    font-size: 18rpx;
+    color: #b07f1d;
+    border: 2rpx solid #d8b659;
+    border-radius: 20rpx;
+    flex-shrink: 0;
+}
+
+/* 已兑完水印 */
+.goods-card .sold-out-mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(80, 80, 80, 0.45);
+}
+.goods-card .sold-out-stamp {
+    width: 130rpx;
+    height: 130rpx;
+    line-height: 130rpx;
+    border: 4rpx solid #ffffff;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 30rpx;
+    font-weight: bold;
+    transform: rotate(-18deg);
+    opacity: 0.9;
+}
+
+/* ============ 热门推荐 ============ */
+.hot-section {
+    margin-top: 24rpx;
+}
+.hot-section .hot-header {
+    padding: 16rpx 4rpx;
+}
+.hot-section .hot-title {
+    font-size: 37rpx;
+    color: #3a3a3a;
+    font-weight: bold;
+}
+.hot-section .hot-more {
+    font-size: 21rpx;
+    color: #999999;
+}
+.hot-section .hot-more-arrow {
+    font-size: 24rpx;
+    color: #ababab;
+    margin-left: 8rpx;
+}
+
+/* ============ 自定义底部 Tab ============ */
+.custom-tabbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 110rpx;
+    padding-bottom: env(safe-area-inset-bottom);
+    background-color: #ffffff;
+    box-shadow: 0 -4rpx 16rpx rgba(0, 0, 0, 0.06);
+    z-index: 99;
+}
+.custom-tabbar-seat {
+    height: 110rpx;
+    height: calc(110rpx + env(safe-area-inset-bottom));
+}
+.custom-tabbar .tabbar-item {
+    padding-top: 14rpx;
+}
+.custom-tabbar .tabbar-icon {
+    width: 44rpx;
+    height: 44rpx;
+    margin: 0 auto 6rpx;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.custom-tabbar .tabbar-icon-goods {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2Q1YjM0NSIgZD0iTTcgN1Y2YTUgNSAwIDAgMSAxMCAwdjFoMy4ybC44IDEzLjVhMSAxIDAgMCAxLTEgMS41SDRhMSAxIDAgMCAxLTEtMS41TDMuOCA3SDd6bTIgMGg2VjZhMyAzIDAgMCAwLTYgMHYxeiIvPjwvc3ZnPg==");
+}
+.custom-tabbar .tabbar-icon-gift {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iIzg1ODU4NSIgZD0iTTE5IDdoLTIuMWEyLjcgMi43IDAgMCAwLTQuOS0yIDIuNyAyLjcgMCAwIDAtNC45IDJINWExIDEgMCAwIDAtMSAxdjNoMXY4YTEgMSAwIDAgMCAxIDFoMTJhMSAxIDAgMCAwIDEtMXYtOGgxVjhhMSAxIDAgMCAwLTEtMXptLTYgMTJoLTJ2LTdoMnY3em0tMy41LTEyYS44LjggMCAxIDEgMC0xLjYuOC44IDAgMCAxIDAgMS42em01IDBhLjguOCAwIDEgMSAwLTEuNi44LjggMCAwIDEgMCAxLjZ6Ii8+PC9zdmc+");
+}
+.custom-tabbar .tabbar-icon-user {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iIzg1ODU4NSIgZD0iTTEyIDEyYTQuNSA0LjUgMCAxIDAgMC05IDQuNSA0LjUgMCAwIDAgMCA5em0wIDEuOGMtNC40IDAtOCAyLjMtOCA1LjRWMjFoMTZ2LTEuOGMwLTMuMS0zLjYtNS40LTgtNS40eiIvPjwvc3ZnPg==");
+}
+.custom-tabbar .tabbar-text {
+    font-size: 21rpx;
+    color: #858585;
+}
+.custom-tabbar .tabbar-item-active .tabbar-text {
+    color: #d5b345;
+}

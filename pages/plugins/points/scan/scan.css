@@ -1,0 +1,275 @@
+/**
+ * 兑换中心 - 整体（米金渐变背景）
+ */
+.exchange-page {
+    min-height: 100vh;
+    padding: 0 55rpx 60rpx 55rpx;
+    background: linear-gradient(180deg, #f7e7c4 0%, #fbf0d9 26%, #fdf8ef 52%, #ffffff 100%);
+}
+
+/**
+ * 标题
+ */
+.ex-hero {
+    padding-top: 56rpx;
+    padding-bottom: 56rpx;
+    text-align: center;
+}
+.ex-hero-title {
+    font-size: 56rpx;
+    font-weight: 700;
+    letter-spacing: 8rpx;
+    background: linear-gradient(180deg, #8f7410 0%, #cfab37 52%, #91760f 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+.ex-hero-underline {
+    width: 156rpx;
+    height: 6rpx;
+    margin: 14rpx auto 0 auto;
+    border-radius: 6rpx;
+    background: linear-gradient(90deg, rgba(202, 166, 53, 0) 0%, #caa635 50%, rgba(202, 166, 53, 0) 100%);
+}
+
+/**
+ * 礼劵代码 输入卡片
+ */
+.ex-code-card {
+    padding: 36rpx 36rpx 40rpx 36rpx;
+    background: #ffffff;
+    border-radius: 28rpx;
+    box-shadow: 0 12rpx 36rpx rgba(180, 150, 60, 0.14);
+}
+.ex-code-label {
+    font-size: 30rpx;
+    font-weight: 600;
+    color: #383737;
+}
+.ex-code-row {
+    display: flex;
+    align-items: center;
+    margin-top: 24rpx;
+}
+.ex-code-input {
+    flex: 1;
+    height: 56rpx;
+    line-height: 56rpx;
+    font-size: 28rpx;
+    color: #383737;
+}
+.ex-code-ph {
+    color: #c9c9c9;
+    font-size: 26rpx;
+}
+.ex-code-qr {
+    width: 64rpx;
+    height: 64rpx;
+    margin-left: 16rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/**
+ * 扫码兑换
+ */
+.ex-scan-wrap {
+    margin-top: 56rpx;
+    text-align: center;
+}
+.ex-scan-circle {
+    width: 240rpx;
+    height: 240rpx;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #ecdca6 0%, #d8b54e 100%);
+    box-shadow: 0 16rpx 36rpx rgba(190, 150, 40, 0.32);
+}
+.ex-scan-circle-text {
+    margin-top: 14rpx;
+    font-size: 26rpx;
+    color: #ffffff;
+}
+.ex-scan-tip {
+    margin-top: 26rpx;
+    font-size: 26rpx;
+    color: #6b6b6b;
+}
+
+/**
+ * 确认兑换 按钮
+ */
+.ex-confirm {
+    height: 104rpx;
+    margin-top: 56rpx;
+    border-radius: 52rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #ecd79a 0%, #d3b04a 50%, #c19f38 100%);
+    box-shadow: 0 14rpx 30rpx rgba(190, 150, 40, 0.30);
+}
+.ex-confirm-hover {
+    opacity: 0.88;
+}
+.ex-confirm-text {
+    font-size: 38rpx;
+    font-weight: 600;
+    letter-spacing: 4rpx;
+    color: #fffaf0;
+}
+.ex-confirm-arrow {
+    margin-left: 16rpx;
+    display: flex;
+    align-items: center;
+}
+
+/**
+ * 近期记录
+ */
+.ex-record {
+    margin-top: 64rpx;
+}
+.ex-record-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 26rpx;
+}
+.ex-record-title {
+    font-size: 32rpx;
+    font-weight: 600;
+    color: #6f5700;
+}
+.ex-record-more {
+    display: flex;
+    align-items: center;
+}
+.ex-record-more-text {
+    font-size: 24rpx;
+    color: #999999;
+    margin-right: 6rpx;
+}
+
+/* 记录卡片 */
+.ex-rec-card {
+    display: flex;
+    align-items: center;
+    padding: 26rpx 28rpx;
+    margin-bottom: 22rpx;
+    background: #ffffff;
+    border-radius: 20rpx;
+    box-shadow: 0 8rpx 24rpx rgba(170, 150, 80, 0.10);
+}
+.ex-rec-card-usable {
+    border-left: 8rpx solid #caa635;
+}
+.ex-rec-icon {
+    width: 96rpx;
+    height: 96rpx;
+    border-radius: 16rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5eccf;
+}
+.ex-rec-icon-used,
+.ex-rec-icon-expired {
+    background: #f0f0f0;
+}
+.ex-rec-info {
+    flex: 1;
+    margin-left: 24rpx;
+    overflow: hidden;
+}
+.ex-rec-info-title {
+    font-size: 26rpx;
+    color: #383737;
+}
+.ex-rec-info-disabled {
+    color: #9d9d9d;
+}
+.ex-rec-info-date {
+    margin-top: 12rpx;
+    font-size: 24rpx;
+    color: #8a8c98;
+}
+.ex-rec-status {
+    min-width: 132rpx;
+    height: 56rpx;
+    padding: 0 20rpx;
+    border-radius: 28rpx;
+    font-size: 26rpx;
+    text-align: center;
+    line-height: 56rpx;
+}
+.ex-rec-status-usable {
+    background: #f5e8c2;
+    color: #735b00;
+}
+.ex-rec-status-used {
+    background: #ededed;
+    color: #9d9d9d;
+}
+.ex-rec-status-expired {
+    background: #f9eaea;
+    color: #c55b5b;
+}
+.ex-record-empty {
+    padding: 70rpx 0;
+    text-align: center;
+    font-size: 26rpx;
+    color: #b9a986;
+}
+
+/**
+ * 结果态
+ */
+.ex-result {
+    padding-top: 80rpx;
+    text-align: center;
+}
+.ex-result-img {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+.ex-result-icon {
+    width: 180rpx;
+    height: 180rpx;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    box-shadow: 0 12rpx 36rpx rgba(180, 150, 60, 0.16);
+}
+.ex-result-msg {
+    margin-top: 40rpx;
+    font-size: 30rpx;
+    color: #383737;
+}
+.ex-result-back {
+    margin-top: 64rpx;
+}
+
+/**
+ * 未登录固定按钮
+ */
+.ex-login-fixed {
+    position: fixed;
+    left: 55rpx;
+    right: 55rpx;
+    bottom: 60rpx;
+    z-index: 10;
+}
+.ex-login-fixed .ex-confirm {
+    margin-top: 0;
+}

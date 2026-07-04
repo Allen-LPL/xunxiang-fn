@@ -1,0 +1,86 @@
+/* 积分明细 —— 按 Figma(9-2358) 还原，单位 rpx */
+.integral-points {
+    min-height: 100vh;
+    background-color: #f3eee3;
+}
+
+/* 自定义金色导航 */
+.integral-points .nav-bar {
+    background: linear-gradient(180deg, #ecd9a8 0%, #e9d09a 100%);
+    position: relative;
+    z-index: 10;
+}
+.integral-points .nav-content {
+    height: 88rpx;
+    padding: 0 24rpx;
+    position: relative;
+}
+.integral-points .nav-back {
+    position: relative;
+    z-index: 2;
+}
+.integral-points .nav-back-arrow {
+    width: 20rpx;
+    height: 20rpx;
+    border-left: 4rpx solid #6b5a2e;
+    border-bottom: 4rpx solid #6b5a2e;
+    transform: rotate(45deg);
+    margin-right: 8rpx;
+}
+.integral-points .nav-back-text {
+    font-size: 27rpx;
+    color: #6b5a2e;
+}
+.integral-points .nav-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 34rpx;
+    color: #5a4a22;
+    font-weight: 500;
+    letter-spacing: 2rpx;
+}
+
+/* 列表 */
+.integral-points .list-scroll {
+    height: calc(100vh - 88rpx);
+    box-sizing: border-box;
+    padding: 20rpx 24rpx;
+}
+.integral-points .list-card {
+    background-color: #ffffff;
+    border-radius: 20rpx;
+    padding: 0 32rpx;
+    box-shadow: 0 6rpx 20rpx rgba(0, 0, 0, 0.04);
+}
+.integral-points .list-item {
+    padding: 30rpx 0;
+    border-bottom: 2rpx solid #f4f4f4;
+}
+.integral-points .list-item:last-child {
+    border-bottom: none;
+}
+.integral-points .item-left {
+    overflow: hidden;
+    padding-right: 20rpx;
+}
+.integral-points .item-msg {
+    font-size: 30rpx;
+    color: #333333;
+}
+.integral-points .item-time {
+    font-size: 22rpx;
+    color: #b3b3b3;
+    margin-top: 12rpx;
+}
+.integral-points .item-value {
+    flex-shrink: 0;
+    font-size: 34rpx;
+    color: #333333;
+}
+.integral-points .item-value.is-plus {
+    color: #333333;
+}
+.integral-points .item-value.is-minus {
+    color: #333333;
+}

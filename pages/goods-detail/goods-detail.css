@@ -1,0 +1,176 @@
+/* 积分商品详情页 —— 按 Figma(750 设计稿) 还原，单位 rpx */
+.goods-detail-points {
+    min-height: 100vh;
+    background-color: #f5f1ea;
+}
+
+/* ============ 自定义导航 ============ */
+.goods-detail-points .nav-bar {
+    background: linear-gradient(180deg, #e8c98a 0%, #e2b86a 100%);
+    position: relative;
+    z-index: 10;
+}
+.goods-detail-points .nav-content {
+    height: 88rpx;
+    padding: 0 24rpx;
+    position: relative;
+}
+.goods-detail-points .nav-back {
+    position: relative;
+    z-index: 2;
+}
+.goods-detail-points .nav-back-arrow {
+    width: 20rpx;
+    height: 20rpx;
+    border-left: 4rpx solid #343434;
+    border-bottom: 4rpx solid #343434;
+    transform: rotate(45deg);
+    margin-right: 8rpx;
+}
+.goods-detail-points .nav-back-text {
+    font-size: 27rpx;
+    color: #343434;
+}
+.goods-detail-points .nav-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 56%;
+    font-size: 25rpx;
+    color: #272727;
+    text-align: center;
+}
+
+/* ============ 主图轮播 ============ */
+.goods-detail-points .main-swiper {
+    width: 750rpx;
+    height: 750rpx;
+}
+.goods-detail-points .main-img {
+    width: 750rpx;
+    height: 750rpx;
+}
+
+/* ============ 商品信息卡 ============ */
+.goods-detail-points .info-card {
+    background-color: #ffffff;
+    margin: -20rpx 16rpx 0;
+    border-radius: 20rpx;
+    padding: 30rpx 28rpx;
+    box-shadow: 0 6rpx 20rpx rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 5;
+}
+.goods-detail-points .info-left {
+    overflow: hidden;
+    padding-right: 16rpx;
+}
+.goods-detail-points .goods-title {
+    font-size: 25rpx;
+    color: #414141;
+    line-height: 1.4;
+}
+.goods-detail-points .goods-desc {
+    font-size: 17rpx;
+    color: #414141;
+    font-weight: 300;
+    margin-top: 14rpx;
+}
+.goods-detail-points .goods-stock {
+    font-size: 17rpx;
+    color: #414141;
+    font-weight: 300;
+    margin-top: 10rpx;
+}
+.goods-detail-points .info-right {
+    flex-shrink: 0;
+    align-self: flex-start;
+    white-space: nowrap;
+}
+.goods-detail-points .points-label {
+    font-size: 24rpx;
+    color: #373839;
+    opacity: 0.69;
+    vertical-align: bottom;
+}
+.goods-detail-points .points-value {
+    font-size: 64rpx;
+    font-weight: 300;
+    color: #e1574b;
+    vertical-align: bottom;
+}
+
+/* ============ 商品详情 ============ */
+.goods-detail-points .detail-content {
+    background-color: #ffffff;
+    margin: 20rpx 16rpx 0;
+    border-radius: 20rpx;
+    overflow: hidden;
+}
+.goods-detail-points .detail-title {
+    font-size: 28rpx;
+    color: #3a3a3a;
+    font-weight: bold;
+    text-align: center;
+    padding: 24rpx 0;
+    border-bottom: 2rpx solid #f2f2f2;
+}
+.goods-detail-points .detail-item image {
+    width: 100%;
+}
+.goods-detail-points .web-html-content {
+    font-size: 26rpx;
+    color: #333333;
+    line-height: 1.6;
+    word-break: break-all;
+}
+
+/* ============ 底部操作栏 ============ */
+.goods-detail-points .bottom-bar-seat {
+    height: 120rpx;
+    height: calc(120rpx + env(safe-area-inset-bottom));
+}
+.goods-detail-points .bottom-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 120rpx;
+    padding: 0 24rpx;
+    padding-bottom: env(safe-area-inset-bottom);
+    background-color: #ffffff;
+    box-shadow: 0 -4rpx 16rpx rgba(0, 0, 0, 0.06);
+    z-index: 99;
+}
+.goods-detail-points .bottom-icon {
+    width: 96rpx;
+    flex-shrink: 0;
+}
+.goods-detail-points .bottom-icon-img {
+    width: 44rpx;
+    height: 44rpx;
+    margin: 0 auto 4rpx;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.goods-detail-points .bottom-icon-service {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iIzg1ODU4NSIgZD0iTTEyIDJhOSA5IDAgMCAwLTkgOXY1LjVBMi41IDIuNSAwIDAgMCA1LjUgMTlIN2ExIDEgMCAwIDAgMS0xdi01YTEgMSAwIDAgMC0xLTFINXYtMWE3IDcgMCAwIDEgMTQgMHYxaC0yYTEgMSAwIDAgMC0xIDF2NWExIDEgMCAwIDAgMSAxaDF2LjVhMS41IDEuNSAwIDAgMS0xLjUgMS41SDEzdjJoMi41QTMuNSAzLjUgMCAwIDAgMTkgMTkuNVYxMWE5IDkgMCAwIDAtOS05eiIvPjwvc3ZnPg==");
+}
+.goods-detail-points .bottom-icon-home {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iIzg1ODU4NSIgZD0iTTEyIDMgMi41IDExLjVsMS4zIDEuNUw1IDExLjlWMjFoNXYtNmg0djZoNXYtOS4xbDEuMiAxLjEgMS4zLTEuNUwxMiAzeiIvPjwvc3ZnPg==");
+}
+.goods-detail-points .bottom-icon-text {
+    font-size: 18rpx;
+    color: #858585;
+}
+.goods-detail-points .exchange-btn {
+    height: 80rpx;
+    line-height: 80rpx;
+    margin-left: 16rpx;
+    border-radius: 40rpx;
+    font-size: 30rpx;
+    color: #ffffff;
+    background: linear-gradient(90deg, #f3a96a 0%, #e1574b 100%);
+    box-shadow: 0 6rpx 16rpx rgba(225, 87, 75, 0.3);
+}

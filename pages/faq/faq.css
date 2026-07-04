@@ -1,0 +1,270 @@
+/* 积分商城-常见问题/帮助中心 —— 按 Figma(9-3485) 还原，单位 rpx */
+page {
+    background-color: #f6f1e8;
+}
+.faq {
+    min-height: 100vh;
+    padding-bottom: 40rpx;
+    background-color: #f6f1e8;
+}
+
+/* 金色导航 */
+.faq .faq-nav-bar {
+    background: linear-gradient(180deg, #f0dcae 0%, #ecd49c 100%);
+}
+.faq .faq-nav-content {
+    height: 88rpx;
+    padding: 0 24rpx;
+    position: relative;
+}
+.faq .faq-nav-back {
+    position: relative;
+    z-index: 2;
+}
+.faq .faq-nav-arrow {
+    width: 20rpx;
+    height: 20rpx;
+    border-left: 4rpx solid #5a4a22;
+    border-bottom: 4rpx solid #5a4a22;
+    transform: rotate(45deg);
+    margin-right: 8rpx;
+}
+.faq .faq-nav-back-text {
+    font-size: 27rpx;
+    color: #5a4a22;
+}
+.faq .faq-nav-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 34rpx;
+    color: #3a3a3a;
+    font-weight: 500;
+    letter-spacing: 2rpx;
+}
+
+/* 头图 */
+.faq .faq-hero {
+    position: relative;
+    padding: 44rpx 40rpx 56rpx;
+    background: linear-gradient(180deg, #ecd49c 0%, #f4e7cb 60%, #f6f1e8 100%);
+    overflow: hidden;
+}
+.faq .faq-hero-main {
+    display: flex;
+    align-items: baseline;
+}
+.faq .faq-hero-faq {
+    font-size: 72rpx;
+    font-weight: bold;
+    color: #ca9f47;
+    letter-spacing: 2rpx;
+}
+.faq .faq-hero-title {
+    margin-left: 16rpx;
+    font-size: 46rpx;
+    font-weight: bold;
+    color: #1a1a19;
+}
+.faq .faq-hero-sub {
+    display: block;
+    margin-top: 10rpx;
+    font-size: 28rpx;
+    color: #5f5f5f;
+}
+.faq .faq-hero-deco {
+    position: absolute;
+    right: 36rpx;
+    top: 36rpx;
+    opacity: 0.9;
+}
+
+/* 分类卡 2x2 */
+.faq .faq-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 30rpx;
+    margin-top: -20rpx;
+    /* hero 为定位元素会盖住上移的卡片顶部，需抬高层级 */
+    position: relative;
+    z-index: 1;
+}
+.faq .faq-card {
+    width: 332rpx;
+    box-sizing: border-box;
+    padding: 24rpx 20rpx;
+    margin-bottom: 20rpx;
+    background: #ffffff;
+    border-radius: 20rpx;
+    border: 2rpx solid transparent;
+    box-shadow: 0 8rpx 22rpx rgba(180, 150, 80, 0.10);
+}
+.faq .faq-card-active {
+    border-color: #e0bd6a;
+    box-shadow: 0 10rpx 26rpx rgba(196, 158, 60, 0.22);
+}
+.faq .faq-card-icon {
+    width: 76rpx;
+    height: 76rpx;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.faq .faq-card-icon-0 {
+    background: linear-gradient(135deg, #7fc08a 0%, #5fa86d 100%);
+}
+.faq .faq-card-icon-1 {
+    background: linear-gradient(135deg, #6cc6b0 0%, #46ab92 100%);
+}
+.faq .faq-card-icon-2 {
+    background: linear-gradient(135deg, #6fa8e6 0%, #4a82d6 100%);
+}
+.faq .faq-card-icon-3 {
+    background: linear-gradient(135deg, #f0c277 0%, #e2a544 100%);
+}
+.faq .faq-card-text {
+    margin-left: 18rpx;
+    overflow: hidden;
+}
+.faq .faq-card-title {
+    font-size: 29rpx;
+    font-weight: bold;
+    color: #383737;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.faq .faq-card-sub {
+    margin-top: 8rpx;
+    font-size: 22rpx;
+    color: #9a9a9a;
+}
+.faq .faq-card-arrow {
+    width: 16rpx;
+    height: 16rpx;
+    border-top: 3rpx solid #c9a44e;
+    border-right: 3rpx solid #c9a44e;
+    transform: rotate(45deg);
+    flex-shrink: 0;
+}
+
+/* Q&A 面板 */
+.faq .faq-panel {
+    margin: 16rpx 30rpx 0;
+    padding: 12rpx 28rpx 20rpx;
+    background: #ffffff;
+    border-radius: 24rpx;
+    box-shadow: 0 8rpx 24rpx rgba(180, 150, 80, 0.10);
+}
+
+/* 搜索 */
+.faq .faq-search {
+    margin: 16rpx 0;
+    padding: 0 24rpx;
+    height: 76rpx;
+    background: #f5f5f5;
+    border-radius: 38rpx;
+}
+.faq .faq-search-input {
+    margin-left: 14rpx;
+    font-size: 27rpx;
+    color: #333333;
+}
+.faq .faq-search-ph {
+    color: #acacac;
+    font-size: 27rpx;
+}
+
+/* Q&A 项 */
+.faq .faq-qa {
+    border-top: 1rpx solid #f0f0f0;
+}
+.faq .faq-qa:first-child {
+    border-top: 0;
+}
+.faq .faq-qa-head {
+    padding: 30rpx 0;
+}
+.faq .faq-qa-q {
+    width: 44rpx;
+    height: 44rpx;
+    line-height: 44rpx;
+    text-align: center;
+    border-radius: 50%;
+    background: #f6ecd2;
+    color: #c38c26;
+    font-size: 30rpx;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+.faq .faq-qa-title {
+    margin-left: 20rpx;
+    font-size: 28rpx;
+    color: #383737;
+}
+.faq .faq-qa-chevron {
+    width: 16rpx;
+    height: 16rpx;
+    border-bottom: 3rpx solid #b9b9b9;
+    border-right: 3rpx solid #b9b9b9;
+    transform: rotate(45deg);
+    margin-left: 16rpx;
+    flex-shrink: 0;
+    transition: transform 0.2s;
+}
+.faq .faq-qa-chevron-up {
+    transform: rotate(-135deg);
+}
+.faq .faq-qa-body {
+    padding: 4rpx 0 30rpx 64rpx;
+}
+.faq .faq-qa-text {
+    font-size: 26rpx;
+    color: #6c6c6c;
+    line-height: 1.7;
+    background: #faf6ec;
+    border-radius: 12rpx;
+    padding: 20rpx 24rpx;
+}
+.faq .faq-empty {
+    padding: 80rpx 0;
+    text-align: center;
+    font-size: 26rpx;
+    color: #b9a986;
+}
+
+/* 联系在线客服 */
+.faq .faq-service-seat {
+    height: 140rpx;
+}
+.faq .faq-service {
+    position: fixed;
+    left: 30rpx;
+    right: 30rpx;
+    bottom: 32rpx;
+    z-index: 20;
+}
+.faq .faq-service-btn {
+    height: 92rpx;
+    line-height: 92rpx;
+    border-radius: 46rpx;
+    padding: 0;
+    background: linear-gradient(90deg, #ecd79a 0%, #d4af56 100%);
+    box-shadow: 0 12rpx 28rpx rgba(196, 158, 60, 0.34);
+}
+.faq .faq-service-hover {
+    opacity: 0.9;
+}
+.faq .faq-service-inner {
+    height: 92rpx;
+}
+.faq .faq-service-text {
+    margin-left: 14rpx;
+    font-size: 30rpx;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 2rpx;
+}

@@ -1,0 +1,191 @@
+/* 积分商城-我的订单 —— 按 Figma(9-1896) 还原，单位 rpx */
+.order-page-points {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f3eee3;
+}
+
+/* ============ 自定义金色导航 ============ */
+.order-page-points .order-nav-bar {
+    flex-shrink: 0;
+    background: linear-gradient(180deg, #ecd9a8 0%, #e9d09a 100%);
+}
+.order-page-points .order-nav-content {
+    height: 88rpx;
+    padding: 0 24rpx;
+    position: relative;
+}
+.order-page-points .order-nav-back {
+    position: relative;
+    z-index: 2;
+}
+.order-page-points .order-nav-arrow {
+    width: 20rpx;
+    height: 20rpx;
+    border-left: 4rpx solid #6b5a2e;
+    border-bottom: 4rpx solid #6b5a2e;
+    transform: rotate(45deg);
+    margin-right: 8rpx;
+}
+.order-page-points .order-nav-back-text {
+    font-size: 27rpx;
+    color: #6b5a2e;
+}
+.order-page-points .order-nav-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 34rpx;
+    color: #5a4a22;
+    font-weight: 500;
+    letter-spacing: 2rpx;
+}
+
+/* 状态 Tab */
+.order-page-points .order-tabs {
+    padding-bottom: 6rpx;
+}
+.order-page-points .order-tab {
+    height: 84rpx;
+    line-height: 84rpx;
+}
+.order-page-points .order-tab text {
+    font-size: 28rpx;
+    color: #7a6a3e;
+}
+.order-page-points .order-tab-active text {
+    color: #c0392b;
+    font-weight: bold;
+}
+.order-page-points .order-tab-line {
+    position: absolute;
+    bottom: 6rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 48rpx;
+    height: 5rpx;
+    background: #c0392b;
+    border-radius: 3rpx;
+}
+
+/* ============ 滚动列表 ============ */
+.order-page-points .order-scroll {
+    flex: 1;
+    height: 0;
+    box-sizing: border-box;
+    padding: 20rpx 24rpx;
+}
+.order-page-points .list-item {
+    background-color: #ffffff;
+    border-radius: 16rpx;
+    padding: 24rpx 24rpx 20rpx;
+    margin-bottom: 24rpx;
+    box-shadow: 0 6rpx 20rpx rgba(0, 0, 0, 0.04);
+}
+
+/* 订单头 */
+.order-page-points .order-head {
+    padding-bottom: 20rpx;
+    border-bottom: 2rpx solid #f4f4f4;
+}
+.order-page-points .order-date {
+    font-size: 24rpx;
+    color: #999999;
+}
+.order-page-points .order-status-name {
+    font-size: 26rpx;
+    color: #e1574b;
+}
+
+/* 商品行 */
+.order-page-points .order-goods-row {
+    padding: 24rpx 0;
+    border-bottom: 2rpx dashed #f0f0f0;
+}
+.order-page-points .order-goods-img {
+    width: 140rpx;
+    height: 140rpx;
+    border-radius: 12rpx;
+    flex-shrink: 0;
+}
+.order-page-points .order-goods-info {
+    padding: 0 20rpx;
+    overflow: hidden;
+}
+.order-page-points .order-goods-title {
+    font-size: 28rpx;
+    color: #333333;
+    line-height: 1.4;
+}
+.order-page-points .order-goods-spec {
+    font-size: 24rpx;
+    color: #999999;
+    margin-top: 14rpx;
+}
+.order-page-points .order-goods-right {
+    flex-shrink: 0;
+}
+.order-page-points .order-goods-price {
+    font-size: 32rpx;
+    color: #333333;
+    font-weight: bold;
+}
+.order-page-points .order-goods-num {
+    font-size: 24rpx;
+    color: #999999;
+    margin-top: 14rpx;
+}
+.order-page-points .orderaftersale-btn-text {
+    right: 0;
+    bottom: 0;
+    font-size: 22rpx;
+    color: #3a8ee6;
+    border: 2rpx solid #3a8ee6;
+    border-radius: 20rpx;
+    padding: 2rpx 16rpx;
+    background-color: #ffffff;
+}
+
+/* 合计 */
+.order-page-points .order-total {
+    padding: 20rpx 0 4rpx;
+    font-size: 24rpx;
+    color: #666666;
+}
+.order-page-points .order-total-num {
+    color: #333333;
+    font-weight: bold;
+}
+.order-page-points .order-total-points {
+    font-size: 30rpx;
+    color: #e1574b;
+    font-weight: bold;
+    margin-left: 6rpx;
+}
+
+/* 操作按钮区（保留原全局按钮样式，仅控制容器） */
+.order-page-points .item-operation {
+    padding-top: 20rpx;
+    border-top: 2rpx solid #f4f4f4;
+    text-align: right;
+}
+.order-page-points .item-operation button {
+    margin-left: 16rpx;
+}
+
+/* 合并支付底部条 */
+.order-page-points .bottom-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16rpx 24rpx;
+    padding-bottom: calc(16rpx + env(safe-area-inset-bottom));
+    background-color: #ffffff;
+    box-shadow: 0 -4rpx 16rpx rgba(0, 0, 0, 0.06);
+    z-index: 99;
+}
+.order-page-points .bottom-fixed .item {
+    width: 100%;
+}
