@@ -1062,7 +1062,7 @@
         bottom: 20rpx;
         z-index: 2;
         margin-left: 20rpx;
-        box-shadow: 0rpx 4rpx 8rpx 0px rgba(0, 0, 0, 0.16);
+        box-shadow: 0rpx 4rpx 8rpx 0px rgba(0, 0, 0, 0.06);
     }
     .plugins-realstore-cart-botton-nav .cart-icon-total .badge-icon {
         top: -20rpx;
@@ -1101,16 +1101,16 @@
     }
     .plugins-realstore-buy-type-choice .item .scan-item,
     .plugins-realstore-buy-type-choice .item-content-0 {
-        background: #E8FFF2;
+        background: #fbfaf7;
     }
     .plugins-realstore-buy-type-choice .item-content-1 {
-        background: #FFF9DC;
+        background: #fbfaf7;
     }
     .plugins-realstore-buy-type-choice .item-content-2 {
-        background: #FFE8DC;
+        background: #fbfaf7;
     }
     .plugins-realstore-buy-type-choice .item-content-3 {
-        background: #EDF9FF;
+        background: #fbfaf7;
     }
     .plugins-realstore-buy-type-choice .item-content .left-icon {
         width: 68rpx;

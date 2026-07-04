@@ -182,7 +182,7 @@
         position: relative;
         z-index: 10;
         border-radius: 100%;
-        box-shadow: 0 0 6rpx 10rpx rgba(89, 181, 255, 15%);
+        box-shadow: 0 0 6rpx 10rpx rgba(0, 0, 0, 0.06);
         background: #59b5ff;
     }
 
@@ -222,8 +222,8 @@
         padding: 20rpx;
         text-align: center;
         margin: 0 auto;
-        -webkit-box-shadow: 0 2px 12px rgb(226 226 226 / 95%);
-        box-shadow: 0 2px 12px rgb(226 226 226 / 95%);
+        -webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
     }
 
     .nav-data-list .item-content,

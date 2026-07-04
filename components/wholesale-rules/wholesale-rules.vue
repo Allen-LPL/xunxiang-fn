@@ -126,7 +126,7 @@ export default {
      * 批发 - 插件
      */
     .plugins-wholesale-container.is-alone {
-        background: linear-gradient(to bottom, #fafafa 0%, #fff 100%);
+        background: #ffffff;
     }
     .plugins-wholesale-container-rules-view {
         display: flex;
@@ -159,7 +159,7 @@ export default {
         margin-right: 10rpx;
     }
     .plugins-wholesale-container-rules .spec-tips {
-        color: #ffbf00;
+        color: #b99359;
         border: 1px solid #333;
         background: #333;
         padding: 2rpx 10rpx;

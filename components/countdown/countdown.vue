@@ -78,7 +78,7 @@
             },
             propTimeBackgroundColor: {
                 type: String,
-                default: 'linear-gradient(180deg, #FF601B 0%, #FE1B33 100%);',
+                default: '#9e2b22',
             },
             propTimeColor: {
                 type: String,

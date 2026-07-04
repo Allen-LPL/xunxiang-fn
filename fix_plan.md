@@ -31,7 +31,7 @@
 - [x] **P1-13 pages/cart + components/cart 走查**：微信绿 #1AAD19 全项目清零（滑动收藏按钮→驼金、page.css green 工具类/switch 组件/distribution 图标→千里江山青绿 #2f4a4a）；error-msg 灰光投影删除；realstore-nav 奶油渐变→纯白；数量步进器描边 #efefef→#e8e4dc；优惠明细 chip/弹窗标题底 #f2f2f2/#eee/#f6f6f6→#f1eee8/#fbfaf7；结算按钮走 bg-main（已印章红）✅；价格走 .sales-price（全站统一，P1-18 复核轮处理）。
 - [x] **P1-14 pages/user-order + user-order-detail 走查**：列表页米色页底→纯白、订单卡去圆角去投影 #fbfaf7、导航暗金→墨黑宋体、tab 砖红 #c0392b→印章红+下划线直角、状态/合计积分 #e1574b→印章红（积分数字宋体）、售后按钮冷蓝 #3a8ee6 描边胶囊→御金描边直角、分割线全部 #f1eee8、商品图直角；详情页虚拟销售提示荧光橙/奶油底→印章红/#fbfaf7/#f1eee8；底部合并支付条投影 0.06 浮层合规。
 - [x] **P1-15 pages/user-address(+save) 走查**：列表页米色页底→纯白、地址卡去圆角去投影 #fbfaf7、导航暗金→墨黑宋体、别名/默认选中砖红 #c0392b/#e1574b→印章红、新增按钮荧光红 #e74c3c→印章红直角、分割线 #f1eee8；save 页证件上传虚线框 #c2c2c2→#e8e4dc（胶囊输入为存量平涂保形）。
-- [ ] **P1-16 components/ 共享业务组件走查**（goods-buy、payment、search、share-popup 等）：按钮/弹层形制统一，弹层投影 opacity≤0.06。
+- [x] **P1-16 components/ 共享业务组件走查**：badge iOS 红 #FF3B30→印章红+去投影；countdown 默认荧光橙红渐变→印章红纯色值（prop 拼接格式已核对）；icon-nav/quick-nav 浮层投影 0.95/蓝色光晕→0.06 中性；realstore-cart 四色马卡龙块（薄荷/奶黄/蜜桃/冰蓝）→#fbfaf7、底部条 0.16→0.06；wholesale-rules 亮黄 #ffbf00→御金、淡渐变→平涂；no-data 骨架渐变→#f1eee8 平涂。组件层投影全部 ≤0.06 或 none，渐变清零。
 - [ ] **P1-17 投影清理（核心链路）**：上述已走查页面外，grep box-shadow 复核核心链路残留，页面内投影清零（浮层除外 ≤0.06）。
 - [ ] **P1-18 全量复核轮**：§5 清单逐项 grep 断言（禁止色=0、金渐变=0、核心页圆角≤2px 或存量平涂胶囊）+ 抽查 diff，确认无新增违规。
 

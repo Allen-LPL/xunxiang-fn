@@ -96,8 +96,8 @@
         padding: 20rpx;
         text-align: center;
         margin: 0 auto;
-        -webkit-box-shadow: 0 2px 12px rgb(226 226 226 / 95%);
-        box-shadow: 0 2px 12px rgb(226 226 226 / 95%);
+        -webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
     }
 
     .icon-nav-list .item .item-content,

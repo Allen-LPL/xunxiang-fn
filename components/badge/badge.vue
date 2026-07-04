@@ -42,12 +42,12 @@
         height: 28rpx;
         line-height: 28rpx;
         text-align: center;
-        background-color: #FF3B30;
+        background-color: #9e2b22;
         border-radius: 40rpx;
         color: #fff;
         font-size: 20rpx;
         padding: 2rpx 2rpx;
-        box-shadow: 0 0 10rpx rgb(0 0 0 / 30%);
+        box-shadow: none;
     }
     .am-badge-text-max {
         padding: 2rpx 4rpx;
