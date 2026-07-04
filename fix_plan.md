@@ -24,7 +24,7 @@
 - [x] **P1-6 points/exchange-goods + points/scan（兑换中心）走查**：scan 页 5 处金光投影清零、hero 标题 clip 金字→宋体 44rpx 墨黑（御金下划线保留为唯一装饰）、礼券卡/记录卡去圆角去投影 #fbfaf7、输入行加 #e8e4dc 下划线、usable 金 accent 条删除（禁止项）、状态 chip 米金/冷灰→白底+印章红/ink-soft/浅印章红文字、「近期记录」宋体+「」；exchange-goods 页米金渐变底→纯白、标题宋体墨黑、卡片直角 #fbfaf7、积分 tag 米金→白底印章红。
 - [x] **P1-7 pages/goods-detail（商品详情）走查**：米色页底→纯白；信息卡去圆角去投影 #fbfaf7；积分大数字 64rpx #e1574b 荧光橙红→宋体印章红（符合 56-64 大数字规范）；详情卡直角、标题宋体+「」、分割线 #f1eee8；兑换按钮橙红渐变+红光投影→印章红平涂（胶囊保形）；底部栏投影 0.06 合规保留；主图 750rpx 通栏出血 ✅。附带：goods-comment 进度条荧光蓝/橙/绿→驼金/御金/ink-soft/青绿（备忘中标记并入本轮项）。
 - [x] **P1-8 pages/exchange-success + paytips 走查**：页底米色 #f5f1ea→纯白；导航暗金 #6b5a2e/#5a4a22→墨黑、导航标题宋体；结果图标金光/红光投影删除；失败图标粉渐变→#c98f89 平涂；结果主标题 40rpx 宋体墨黑；按钮直角、次按钮描边 #eeeeee→#e8e4dc；金色面积复核：仅结果图标+主按钮驼金平涂，合规。
-- [ ] **P1-9 pages/user-integral（积分明细）走查**：大数字宋体、去框、分割线 ≤1px #F1EEE8。
+- [x] **P1-9 pages/user-integral（积分明细）走查**：页底米色 #f3eee3→纯白；列表卡 20rpx 圆角+投影→直角 #fbfaf7 无投影；导航暗金→墨黑+标题宋体；积分增减数字 34rpx 宋体墨黑；分割线 #f4f4f4→#f1eee8。
 - [ ] **P1-10 pages/faq 走查**：去框化、section 标题「」、装饰元素≤1/屏。
 - [ ] **P1-11 pages/login 走查**：输入框下划线式或 #E8E4DC 描边、主按钮墨黑底白字、去圆角胶囊渐变。
 - [ ] **P1-12 pages/goods-category + goods-search 走查**：tab/筛选样式统一、卡片去框、每屏≤2.5 卡片密度（列表间距）。

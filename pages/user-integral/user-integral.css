@@ -1,7 +1,7 @@
 /* 积分明细 —— 按 Figma(9-2358) 还原，单位 rpx */
 .integral-points {
     min-height: 100vh;
-    background-color: #f3eee3;
+    background-color: #ffffff;
 }
 
 /* 自定义金色导航 */
@@ -22,21 +22,22 @@
 .integral-points .nav-back-arrow {
     width: 20rpx;
     height: 20rpx;
-    border-left: 4rpx solid #6b5a2e;
-    border-bottom: 4rpx solid #6b5a2e;
+    border-left: 4rpx solid #1a1a1a;
+    border-bottom: 4rpx solid #1a1a1a;
     transform: rotate(45deg);
     margin-right: 8rpx;
 }
 .integral-points .nav-back-text {
     font-size: 27rpx;
-    color: #6b5a2e;
+    color: #1a1a1a;
 }
 .integral-points .nav-title {
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     font-size: 34rpx;
-    color: #5a4a22;
+    color: #1a1a1a;
     font-weight: 500;
     letter-spacing: 2rpx;
 }
@@ -48,14 +49,13 @@
     padding: 20rpx 24rpx;
 }
 .integral-points .list-card {
-    background-color: #ffffff;
-    border-radius: 20rpx;
+    background-color: #fbfaf7;
+    border-radius: 0;
     padding: 0 32rpx;
-    box-shadow: 0 6rpx 20rpx rgba(0, 0, 0, 0.04);
 }
 .integral-points .list-item {
     padding: 30rpx 0;
-    border-bottom: 2rpx solid #f4f4f4;
+    border-bottom: 2rpx solid #f1eee8;
 }
 .integral-points .list-item:last-child {
     border-bottom: none;
@@ -74,9 +74,10 @@
     margin-top: 12rpx;
 }
 .integral-points .item-value {
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
     flex-shrink: 0;
     font-size: 34rpx;
-    color: #333333;
+    color: #1a1a1a;
 }
 .integral-points .item-value.is-plus {
     color: #333333;
