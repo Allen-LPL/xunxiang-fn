@@ -6,10 +6,10 @@
     /* #ifdef H5 */
     height: 286rpx;
     /* #endif */
-    background-color: #f5f5f5;
+    background-color: #fbfaf7;
 }
 .goods-top-search-bg {
-    background-color: #f5f5f5;
+    background-color: #fbfaf7;
 }
 
 /**
@@ -42,14 +42,14 @@
 */
 .left-nav {
     width: 200rpx;
-    background-color: #f5f5f5;
+    background-color: #fbfaf7;
     height: 100%;
 }
 .left-nav .item {
     height: 80rpx;
     line-height: 80rpx;
     padding: 0 10rpx;
-    background: #f5f5f5;
+    background: #fbfaf7;
 }
 .left-nav .nav-active {
     background: #fff;
@@ -64,7 +64,7 @@
     height: 100%;
     top: 0;
     right: 0;
-    background: #f5f5f5;
+    background: #fbfaf7;
 }
 .content-item {
     width: calc(100% / 3);
@@ -122,38 +122,38 @@
     content: '';
     width: 126rpx;
     height: 12rpx;
-    border-radius: 6rpx;
+    border-radius: 0;
     position: absolute;
     bottom: 0;
     left: 0;
     opacity: 0.6;
 }
 .text-random-1::before {
-    background: linear-gradient(90deg, #F2C3A5 0%, rgba(255, 255, 255, 0) 100%);
+    background: #f1eee8;
 }
 .text-random-2::before {
-    background: linear-gradient(90deg, #FF9BBB 0%, rgba(255, 255, 255, 0) 100%);
+    background: #f1eee8;
 }
 .text-random-3::before {
-    background: linear-gradient(90deg, #EAC5A9 0%, rgba(255, 255, 255, 0) 100%);
+    background: #f1eee8;
 }
 .text-random-4::before {
-    background: linear-gradient(90deg, #F7BEBE 0%, rgba(255, 255, 255, 0) 100%);
+    background: #f1eee8;
 }
 .text-random-5::before {
-    background: linear-gradient(90deg, #F2DC86 0%, rgba(255, 255, 255, 0) 100%);
+    background: #f1eee8;
 }
 .text-random-6::before {
-    background: linear-gradient(90deg, #98B7E8 0%, rgba(255, 255, 255, 0) 100%);
+    background: #f1eee8;
 }
 .text-random-7::before {
-    background: linear-gradient(90deg, #CD92F3 0%, rgba(255, 255, 255, 0) 100%);
+    background: #f1eee8;
 }
 .text-random-8::before {
-    background: linear-gradient(90deg, #5EEA7C 0%, rgba(255, 255, 255, 0) 100%);
+    background: #f1eee8;
 }
 .text-random-9::before {
-    background: linear-gradient(90deg, #E67A7A 0%, rgba(255, 255, 255, 0) 100%);
+    background: #f1eee8;
 }
 
 
@@ -216,7 +216,7 @@
     padding-bottom: 20rpx;
 }
 .right-content-actual .item:not(:last-of-type) {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #f1eee8;
 }
 .right-content-actual .item .plugins-label-img {
     border-top-left-radius: 10rpx;
@@ -271,7 +271,7 @@
     bottom: 20rpx;
     z-index: 2;
     margin-left: 20rpx;
-    box-shadow: 0rpx 4rpx 8rpx 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0rpx 4rpx 8rpx 0px rgba(0, 0, 0, 0.06);
     line-height: 84rpx;
     height: 84rpx;
 }

@@ -1,10 +1,10 @@
 /* 积分商城-商品搜索 —— 与首页(pages/index)同款金色卡片风格，单位 rpx */
 page {
-    background-color: #f6f1e8;
+    background-color: #ffffff;
 }
 .points-search {
     min-height: 100vh;
-    background-color: #f6f1e8;
+    background-color: #ffffff;
 }
 
 /* ============ 顶部金色搜索区 ============ */
@@ -14,15 +14,14 @@ page {
 }
 .points-search .gs-search-bar {
     height: 88rpx;
-    background-color: #ffffff;
+    background-color: #fbfaf7;
     border-radius: 44rpx;
     padding: 0 12rpx 0 32rpx;
-    box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.04);
 }
 .points-search .gs-search-icon {
     width: 30rpx;
     height: 30rpx;
-    border: 4rpx solid #c8a04a;
+    border: 4rpx solid #b99359;
     border-radius: 50%;
     position: relative;
     flex-shrink: 0;
@@ -34,7 +33,7 @@ page {
     bottom: -6rpx;
     width: 14rpx;
     height: 4rpx;
-    background-color: #c8a04a;
+    background-color: #b99359;
     transform: rotate(45deg);
     border-radius: 4rpx;
 }
@@ -69,10 +68,9 @@ page {
 .points-search .goods-card {
     width: 332rpx;
     background-color: #ffffff;
-    border-radius: 16rpx;
+    border-radius: 0;
     overflow: hidden;
     margin-bottom: 24rpx;
-    box-shadow: 0 6rpx 20rpx rgba(0, 0, 0, 0.05);
 }
 .points-search .goods-card .goods-img-box {
     width: 100%;
@@ -101,9 +99,10 @@ page {
     opacity: 0.69;
 }
 .points-search .goods-card .goods-points-value {
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
     font-size: 44rpx;
-    font-weight: 300;
-    color: #bb9b2c;
+    font-weight: 400;
+    color: #9e2b22;
 }
 .points-search .goods-card .exchange-btn {
     min-width: 66rpx;
@@ -111,9 +110,9 @@ page {
     line-height: 40rpx;
     padding: 0 16rpx;
     font-size: 18rpx;
-    color: #b07f1d;
-    border: 2rpx solid #d8b659;
-    border-radius: 20rpx;
+    color: #ffffff;
+    background-color: #9e2b22;
+    border-radius: 0;
     flex-shrink: 0;
 }
 

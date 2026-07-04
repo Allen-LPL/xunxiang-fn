@@ -39,7 +39,8 @@ grep -rniE '#dddddd|#ddd\b' common components/cart pages/user-address pages/plug
 
 ## 下轮注意
 
-- 下一项任务：**P1-12 goods-category + goods-search 走查**（goods-category.css:138 米色淡出条；goods-search 顶部已白，剩卡片/tab/密度）。
+- 下一项任务：**P1-13 pages/cart + components/cart 走查**（结算按钮墨黑/印章红、价格格式、去圆角胶囊、微信绿 #1AAD19 收敛——见"遗留观察"）。
+- **坑：部分 css 文件是 CRLF 行尾**（goods-category.css 等，且内部混合）。python open().read()/write() 会静默转 LF 造成全文件 diff——改用 bytes 模式或改完后恢复 CRLF。sed 不受影响。
 - FAQ 分类图标色板定案：青绿 #2f4a4a / 灰绿 #547070 / 青花蓝 #3a3f8f（规范明文例外）/ 驼金 #be8f5b——多分类图标需要区分色时用这套。
 - goods-comment 进度条 4 色已收敛（含 #5eb95e 荧光绿→千里江山青绿 #2f4a4a），该页其余样式待全量复核轮抽查。
 - points/index 是 ShopXO 原生积分页（分享/明细），主要靠全局 theme 类；自定义"兑换中心"界面在 points/scan（礼券码输入+大标题）。
