@@ -39,7 +39,8 @@ grep -rniE '#dddddd|#ddd\b' common components/cart pages/user-address pages/plug
 
 ## 下轮注意
 
-- 下一项任务：**P1-4 pages/user 个人中心走查**（user.css：圆角/投影/描边/排印/价格格式；头部已在 P0-3 改白）。
+- 下一项任务：**P1-5 pages/plugins/points/index 兑换中心走查**（scan.css 同目录 scan 页已部分处理，本任务是 points/index/index.css：渐变、圆角、卡片去框、积分大数字宋体）。
+- SVG base64 图标重上色套路：python 解码→replace fill→重编码（见第 10 轮），比手工 sed 安全，能同时断言所有 fill 合规。
 - **走查套路已成型**（P1-3 首页为模板）：① grep box-shadow/border-radius/border/色值盘点 → ② 米色底→白、卡片去框直角、数字宋体、价格/积分→印章红、CTA→印章红或墨黑直角、亮金→御金、section 标题宋体+「」伪元素 → ③ 断言：禁止色 0、投影仅浮层 ≤0.06、容器圆角 0（圆形头像/图标 50% 与存量胶囊除外）。
 - 页面直接写 font-family 栈而非 .lz-* 类（模板不加类、纯 css 实现），diff 更小；「」用 ::before/::after 加在既有标题类上。
 - **宋体依赖系统字体栈**：未打包字体文件（小程序包体积/不新增资源依赖）。iOS/Mac 有 Songti SC；部分 Android 无衬线中文时回退 serif→黑体，属可接受降级。若品牌方后续要求强一致，需在 H5 侧 @font-face 引入 Noto Serif SC（另立任务）。

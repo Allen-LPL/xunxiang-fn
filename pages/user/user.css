@@ -1,7 +1,7 @@
 /* 积分商城个人中心 —— 按 Figma(750 设计稿) 还原，单位 rpx。图标 background-image 由脚本注入在文件末尾 */
 .user-points {
     min-height: 100vh;
-    background-color: #f3eee3;
+    background-color: #ffffff;
     padding-bottom: 140rpx;
 }
 
@@ -27,8 +27,9 @@
     line-height: 88rpx;
 }
 .user-points .nav-title {
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
     font-size: 34rpx;
-    color: #b8923a;
+    color: #1a1a1a;
     font-weight: 500;
     letter-spacing: 2rpx;
 }
@@ -38,12 +39,12 @@
 .user-points .avatar {
     width: 120rpx;
     height: 120rpx;
-    border: 4rpx solid #d4b86a;
+    border: 4rpx solid #b99359;
     flex-shrink: 0;
 }
 .user-points .user-name {
     font-size: 38rpx;
-    color: #3a3a3a;
+    color: #1a1a1a;
     font-weight: bold;
 }
 .user-points .member-badge {
@@ -66,9 +67,9 @@
     flex-shrink: 0;
     height: 60rpx;
     padding: 0 24rpx;
-    background-color: #ffffff;
+    background-color: transparent;
+    border: 2rpx solid #b99359;
     border-radius: 30rpx;
-    box-shadow: 0 4rpx 12rpx rgba(180, 146, 58, 0.15);
 }
 .user-points .sign-icon {
     width: 28rpx;
@@ -77,7 +78,7 @@
 }
 .user-points .sign-btn text {
     font-size: 26rpx;
-    color: #b8923a;
+    color: #b99359;
 }
 
 /* ============ 主体 ============ */
@@ -88,18 +89,18 @@
 
 /* 积分卡 */
 .user-points .points-card {
-    background-color: #ffffff;
-    border-radius: 20rpx;
+    background-color: #fbfaf7;
+    border-radius: 0;
     padding: 36rpx 32rpx 0;
-    box-shadow: 0 6rpx 20rpx rgba(0, 0, 0, 0.04);
 }
 .user-points .pc-label {
     font-size: 26rpx;
     color: #999999;
 }
 .user-points .pc-value {
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
     font-size: 36rpx;
-    color: #333333;
+    color: #1a1a1a;
     margin-top: 16rpx;
     min-height: 50rpx;
     letter-spacing: 2rpx;
@@ -110,9 +111,9 @@
 }
 .user-points .points-card-tabs {
     margin-top: 36rpx;
-    border-top: 2rpx solid #f2f2f2;
-    background-color: #fafafa;
-    border-radius: 0 0 20rpx 20rpx;
+    border-top: 2rpx solid #f1eee8;
+    background-color: #fbfaf7;
+    border-radius: 0;
     margin: 36rpx -32rpx 0;
 }
 .user-points .pc-tab {
@@ -130,25 +131,31 @@
 .user-points .pc-tab-divider {
     width: 2rpx;
     height: 40rpx;
-    background-color: #e8e8e8;
+    background-color: #f1eee8;
     align-self: center;
 }
 
 /* 我的订单 */
 .user-points .order-card {
-    background-color: #ffffff;
-    border-radius: 20rpx;
+    background-color: #fbfaf7;
+    border-radius: 0;
     padding: 28rpx 24rpx 32rpx;
     margin-top: 24rpx;
-    box-shadow: 0 6rpx 20rpx rgba(0, 0, 0, 0.04);
 }
 .user-points .order-header {
     padding: 0 8rpx 24rpx;
 }
 .user-points .card-title {
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
     font-size: 32rpx;
-    color: #333333;
+    color: #1a1a1a;
     font-weight: bold;
+}
+.user-points .card-title::before {
+    content: '「';
+}
+.user-points .card-title::after {
+    content: '」';
 }
 .user-points .more {
     font-size: 24rpx;
@@ -175,7 +182,7 @@
     height: 28rpx;
     line-height: 28rpx;
     padding: 0 6rpx;
-    background-color: #e1574b;
+    background-color: #9e2b22;
     color: #ffffff;
     font-size: 18rpx;
     text-align: center;
@@ -189,15 +196,14 @@
 
 /* 功能菜单 */
 .user-points .menu-card {
-    background-color: #ffffff;
-    border-radius: 20rpx;
+    background-color: #fbfaf7;
+    border-radius: 0;
     margin-top: 24rpx;
     padding: 0 28rpx;
-    box-shadow: 0 6rpx 20rpx rgba(0, 0, 0, 0.04);
 }
 .user-points .menu-item {
     height: 104rpx;
-    border-bottom: 2rpx solid #f4f4f4;
+    border-bottom: 2rpx solid #f1eee8;
 }
 .user-points .menu-item:last-child {
     border-bottom: none;
@@ -245,7 +251,7 @@
     color: #858585;
 }
 .user-points .custom-tabbar .tabbar-item-active .tabbar-text {
-    color: #d5b345;
+    color: #b99359;
 }
 
 /* ===== 图标素材（矢量内联，按 Figma 形状还原） ===== */
@@ -253,7 +259,7 @@
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTMgOGw0IDMgNS02IDUgNiA0LTMtMiAxMUg1TDMgOHoiLz48L3N2Zz4=");
 }
 .user-points .sign-icon {
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2I4OTIzYSIgZD0iTTcgMnYySDVhMiAyIDAgMCAwLTIgMnYxM2EyIDIgMCAwIDAgMiAyaDE0YTIgMiAwIDAgMCAyLTJWNmEyIDIgMCAwIDAtMi0yaC0yVjJoLTJ2Mkg5VjJIN3pNNSA5aDE0djEwSDVWOXptNi4yIDggNS01LTEuNC0xLjQtMy42IDMuNi0xLjYtMS42TDguMiAxNGwzIDN6Ii8+PC9zdmc+");
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2I5OTM1OSIgZD0iTTcgMnYySDVhMiAyIDAgMCAwLTIgMnYxM2EyIDIgMCAwIDAgMiAyaDE0YTIgMiAwIDAgMCAyLTJWNmEyIDIgMCAwIDAtMi0yaC0yVjJoLTJ2Mkg5VjJIN3pNNSA5aDE0djEwSDVWOXptNi4yIDggNS01LTEuNC0xLjQtMy42IDMuNi0xLjYtMS42TDguMiAxNGwzIDN6Ii8+PC9zdmc+");
 }
 .user-points .pc-icon-detail {
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iIzg4ODg4OCIgZD0iTTYgMmg4bDUgNXYxNGExIDEgMCAwIDEtMSAxSDZhMSAxIDAgMCAxLTEtMVYzYTEgMSAwIDAgMSAxLTF6bTcgMS41VjhoNC41TDEzIDMuNXpNOCAxMmg4djEuNkg4VjEyem0wIDRoOHYxLjZIOFYxNnoiLz48L3N2Zz4=");
@@ -289,14 +295,14 @@
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iIzg1ODU4NSIgZD0iTTE5IDdoLTIuMWEyLjcgMi43IDAgMCAwLTQuOS0yIDIuNyAyLjcgMCAwIDAtNC45IDJINWExIDEgMCAwIDAtMSAxdjNoMXY4YTEgMSAwIDAgMCAxIDFoMTJhMSAxIDAgMCAwIDEtMXYtOGgxVjhhMSAxIDAgMCAwLTEtMXptLTYgMTJoLTJ2LTdoMnY3em0tMy41LTEyYS44LjggMCAxIDEgMC0xLjYuOC44IDAgMCAxIDAgMS42em01IDBhLjguOCAwIDEgMSAwLTEuNi44LjggMCAwIDEgMCAxLjZ6Ii8+PC9zdmc+");
 }
 .user-points .custom-tabbar .tabbar-icon-user-active {
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2Q1YjM0NSIgZD0iTTEyIDEyYTQuNSA0LjUgMCAxIDAgMC05IDQuNSA0LjUgMCAwIDAgMCA5em0wIDEuOGMtNC40IDAtOCAyLjMtOCA1LjRWMjFoMTZ2LTEuOGMwLTMuMS0zLjYtNS40LTgtNS40eiIvPjwvc3ZnPg==");
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2I5OTM1OSIgZD0iTTEyIDEyYTQuNSA0LjUgMCAxIDAgMC05IDQuNSA0LjUgMCAwIDAgMCA5em0wIDEuOGMtNC40IDAtOCAyLjMtOCA1LjRWMjFoMTZ2LTEuOGMwLTMuMS0zLjYtNS40LTgtNS40eiIvPjwvc3ZnPg==");
 }
 
 .user-points .edit-icon {
     width: 28rpx;
     height: 28rpx;
     margin-left: 14rpx;
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2I4OTIzYSIgZD0iTTMgMTcuMjVWMjFoMy43NUwxNy44MSA5Ljk0bC0zLjc1LTMuNzVMMyAxNy4yNXpNMjAuNzEgNy4wNGExIDEgMCAwIDAgMC0xLjQxbC0yLjM0LTIuMzRhMSAxIDAgMCAwLTEuNDEgMGwtMS44MyAxLjgzIDMuNzUgMy43NSAxLjgzLTEuODN6Ii8+PC9zdmc+");
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2I5OTM1OSIgZD0iTTMgMTcuMjVWMjFoMy43NUwxNy44MSA5Ljk0bC0zLjc1LTMuNzVMMyAxNy4yNXpNMjAuNzEgNy4wNGExIDEgMCAwIDAgMC0xLjQxbC0yLjM0LTIuMzRhMSAxIDAgMCAwLTEuNDEgMGwtMS44MyAxLjgzIDMuNzUgMy43NSAxLjgzLTEuODN6Ii8+PC9zdmc+");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

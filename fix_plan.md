@@ -19,7 +19,7 @@
 - [x] **P1-1 全局导航与 tabbar**：pages.json 全部导航已纯白+黑字（审计确认，0 违规）；nav-back 自绘返回条白底 ✅；tabbar=component-diy-footer（后端 DIY 配置驱动配色），前端兜底默认色改墨黑 #1a1a1a/御金选中 #b99359；footer 无描边无投影 ✅。
 - [x] **P1-2 排印基建**：longzhuge.css 已含 .lz-serif/.lz-title/.lz-section-title(「」)/.lz-price(¥: 元)/.lz-price-num/.lz-num-hero/.lz-series-name + ≥14px 注释；本轮补 .lz-nav-title（宋体居中导航标题）与 .lz-desc（说明文字层级，与主标题 ≥1.8:1）。
 - [x] **P1-3 pages/index（首页/积分商城）走查**：米色页底→纯白；会员卡去金描边/去投影/去圆角、底色 #fbfaf7 弱分组；搜索框去投影（存量胶囊平涂保形）；商品卡去圆角去投影；积分数字宋体+印章红；兑换按钮印章红底白字直角；「热门推荐」宋体+「」；亮金 #d5b345/#c8a04a 系全部收敛为御金 #b99359（含 tabbar SVG 图标 base64 重编码）；banner 通栏出血 ✅。
-- [ ] **P1-4 pages/user（个人中心）走查**：user.css 金渐变已在 P0-3 清；本轮处理圆角/投影/描边/排印/价格格式。
+- [x] **P1-4 pages/user（个人中心）走查**：米色页底 #f3eee3→纯白；三张卡（积分/订单/菜单）去圆角去投影、#fbfaf7 弱分组；导航标题宋体墨黑；积分数字宋体；签到按钮金光投影→1px 御金描边透明底；订单角标 #e1574b→印章红；分割线全部 #f1eee8；「」card-title；杂金（#b8923a/#d4b86a/#d5b345 含 SVG fill）→御金 #b99359。
 - [ ] **P1-5 pages/plugins/points/index（兑换中心）走查**：index.css 渐变、圆角、卡片盒子去框化、积分大数字宋体 56-64px。
 - [ ] **P1-6 pages/plugins/points/exchange-goods + scan 走查**：渐变、圆角、按钮形制（白场墨黑底/印章红底）。
 - [ ] **P1-7 pages/goods-detail（商品详情）走查**：T3 映射——顶部沉浸图+白场参数区；价格印章红 + `¥:xxxx 元` 格式；去投影去描边。
