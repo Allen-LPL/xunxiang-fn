@@ -22,7 +22,7 @@
 - [x] **P1-4 pages/user（个人中心）走查**：米色页底 #f3eee3→纯白；三张卡（积分/订单/菜单）去圆角去投影、#fbfaf7 弱分组；导航标题宋体墨黑；积分数字宋体；签到按钮金光投影→1px 御金描边透明底；订单角标 #e1574b→印章红；分割线全部 #f1eee8；「」card-title；杂金（#b8923a/#d4b86a/#d5b345 含 SVG fill）→御金 #b99359。
 - [x] **P1-5 pages/plugins/points/index（积分插件首页）走查**：分享按钮荧光橙渐变 #FF9747→#FF6E01 → 驼金平涂 #be8f5b（半胶囊存量保形）；分割线 #eee→#f1eee8；页面无投影；其余样式走全局 theme 类（已印章红化）；积分数字为行内小字非 hero，宋体规则不适用。注：真正的"兑换中心"大数字页是 points/scan（P1-6 覆盖）。
 - [x] **P1-6 points/exchange-goods + points/scan（兑换中心）走查**：scan 页 5 处金光投影清零、hero 标题 clip 金字→宋体 44rpx 墨黑（御金下划线保留为唯一装饰）、礼券卡/记录卡去圆角去投影 #fbfaf7、输入行加 #e8e4dc 下划线、usable 金 accent 条删除（禁止项）、状态 chip 米金/冷灰→白底+印章红/ink-soft/浅印章红文字、「近期记录」宋体+「」；exchange-goods 页米金渐变底→纯白、标题宋体墨黑、卡片直角 #fbfaf7、积分 tag 米金→白底印章红。
-- [ ] **P1-7 pages/goods-detail（商品详情）走查**：T3 映射——顶部沉浸图+白场参数区；价格印章红 + `¥:xxxx 元` 格式；去投影去描边。
+- [x] **P1-7 pages/goods-detail（商品详情）走查**：米色页底→纯白；信息卡去圆角去投影 #fbfaf7；积分大数字 64rpx #e1574b 荧光橙红→宋体印章红（符合 56-64 大数字规范）；详情卡直角、标题宋体+「」、分割线 #f1eee8；兑换按钮橙红渐变+红光投影→印章红平涂（胶囊保形）；底部栏投影 0.06 合规保留；主图 750rpx 通栏出血 ✅。附带：goods-comment 进度条荧光蓝/橙/绿→驼金/御金/ink-soft/青绿（备忘中标记并入本轮项）。
 - [ ] **P1-8 pages/exchange-success + paytips 走查**：P0-3 后残留的金色面积≤5% 核查、圆角、按钮形制。
 - [ ] **P1-9 pages/user-integral（积分明细）走查**：大数字宋体、去框、分割线 ≤1px #F1EEE8。
 - [ ] **P1-10 pages/faq 走查**：去框化、section 标题「」、装饰元素≤1/屏。

@@ -39,7 +39,8 @@ grep -rniE '#dddddd|#ddd\b' common components/cart pages/user-address pages/plug
 
 ## 下轮注意
 
-- 下一项任务：**P1-7 pages/goods-detail 商品详情走查**（goods-detail.css：页底 #f5f1ea 米色、:174 橙红促销渐变、价格格式；T3 映射沉浸图+白场参数区）。
+- 下一项任务：**P1-8 exchange-success + paytips 走查**（P0-3 后残留核查：paytips:63 粉渐变失败图标、圆角、按钮形制、金色面积）。
+- goods-comment 进度条 4 色已收敛（含 #5eb95e 荧光绿→千里江山青绿 #2f4a4a），该页其余样式待全量复核轮抽查。
 - points/index 是 ShopXO 原生积分页（分享/明细），主要靠全局 theme 类；自定义"兑换中心"界面在 points/scan（礼券码输入+大标题）。
 - SVG base64 图标重上色套路：python 解码→replace fill→重编码（见第 10 轮），比手工 sed 安全，能同时断言所有 fill 合规。
 - **走查套路已成型**（P1-3 首页为模板）：① grep box-shadow/border-radius/border/色值盘点 → ② 米色底→白、卡片去框直角、数字宋体、价格/积分→印章红、CTA→印章红或墨黑直角、亮金→御金、section 标题宋体+「」伪元素 → ③ 断言：禁止色 0、投影仅浮层 ≤0.06、容器圆角 0（圆形头像/图标 50% 与存量胶囊除外）。

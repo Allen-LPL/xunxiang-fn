@@ -1,7 +1,7 @@
 /* 积分商品详情页 —— 按 Figma(750 设计稿) 还原，单位 rpx */
 .goods-detail-points {
     min-height: 100vh;
-    background-color: #f5f1ea;
+    background-color: #ffffff;
 }
 
 /* ============ 自定义导航 ============ */
@@ -53,11 +53,10 @@
 
 /* ============ 商品信息卡 ============ */
 .goods-detail-points .info-card {
-    background-color: #ffffff;
+    background-color: #fbfaf7;
     margin: -20rpx 16rpx 0;
-    border-radius: 20rpx;
+    border-radius: 0;
     padding: 30rpx 28rpx;
-    box-shadow: 0 6rpx 20rpx rgba(0, 0, 0, 0.05);
     position: relative;
     z-index: 5;
 }
@@ -94,9 +93,10 @@
     vertical-align: bottom;
 }
 .goods-detail-points .points-value {
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
     font-size: 64rpx;
-    font-weight: 300;
-    color: #e1574b;
+    font-weight: 400;
+    color: #9e2b22;
     vertical-align: bottom;
 }
 
@@ -104,16 +104,23 @@
 .goods-detail-points .detail-content {
     background-color: #ffffff;
     margin: 20rpx 16rpx 0;
-    border-radius: 20rpx;
+    border-radius: 0;
     overflow: hidden;
 }
 .goods-detail-points .detail-title {
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
     font-size: 28rpx;
-    color: #3a3a3a;
+    color: #1a1a1a;
     font-weight: bold;
     text-align: center;
     padding: 24rpx 0;
-    border-bottom: 2rpx solid #f2f2f2;
+    border-bottom: 2rpx solid #f1eee8;
+}
+.goods-detail-points .detail-title::before {
+    content: '「';
+}
+.goods-detail-points .detail-title::after {
+    content: '」';
 }
 .goods-detail-points .detail-item image {
     width: 100%;
@@ -171,6 +178,5 @@
     border-radius: 40rpx;
     font-size: 30rpx;
     color: #ffffff;
-    background: linear-gradient(90deg, #f3a96a 0%, #e1574b 100%);
-    box-shadow: 0 6rpx 16rpx rgba(225, 87, 75, 0.3);
+    background: #9e2b22;
 }

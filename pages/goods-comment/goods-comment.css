@@ -29,19 +29,19 @@
     line-height: 40rpx;
     color: #fff;
     text-align: center;
-    background-color: #0e90d2;
+    background-color: #be8f5b;
 }
 .progress-bar-danger {
     background-color: #9E2B22;
 }
 .progress-bar-warning {
-    background-color: #F37B1D;
+    background-color: #b99359;
 }
 .progress-bar-secondary {
-    background-color: #3bb4f2;
+    background-color: #606060;
 }
 .progress-bar-success {
-    background-color: #5eb95e;
+    background-color: #2f4a4a;
 }
 
 /*
