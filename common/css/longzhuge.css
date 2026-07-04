@@ -80,6 +80,21 @@ page {
     color: var(--ink, #1a1a1a);
 }
 
+/* 自绘导航标题：宋体居中（配合纯白导航条使用） */
+.lz-nav-title {
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;
+    font-size: 34rpx;
+    color: var(--ink, #1a1a1a);
+    text-align: center;
+}
+
+/* 说明文字：20-24rpx 层级，与 .lz-title(42rpx) 构成 ≥1.8:1 尺度对比，中间不设过渡层级 */
+.lz-desc {
+    font-size: 22rpx;
+    line-height: 1.6;
+    color: var(--ink-soft, #606060);
+}
+
 /* 系列名宽字距（≤6 字才可用，须确认不折行） */
 .lz-series-name {
     font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', serif;

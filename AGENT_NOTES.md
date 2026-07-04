@@ -39,7 +39,8 @@ grep -rniE '#dddddd|#ddd\b' common components/cart pages/user-address pages/plug
 
 ## 下轮注意
 
-- 下一项任务：**P1-2 排印基建**（宋体工具类已在 longzhuge.css 建好，本任务核心是把「」标题/价格格式样式类落到 business.css 级别可复用，或确认 longzhuge.css 已覆盖后直接勾掉并开始应用到 P1-3 首页）。
+- 下一项任务：**P1-3 pages/index 首页走查**（圆角/投影/描边/图占屏/overlay/主标题宋体/单屏≤3信息组；index.css 之前已平涂 3 处金渐变，本轮做整页收敛并落 .lz-* 类）。
+- **宋体依赖系统字体栈**：未打包字体文件（小程序包体积/不新增资源依赖）。iOS/Mac 有 Songti SC；部分 Android 无衬线中文时回退 serif→黑体，属可接受降级。若品牌方后续要求强一致，需在 H5 侧 @font-face 引入 Noto Serif SC（另立任务）。
 - P0 已全部完成 ✅（token / 微信红 / 金渐变 / theme.css / 冷灰）。
 - **tabbar 架构**：pages.json tabBar 全 transparent（占位），真实渲染链 = components/common/common.vue → component-diy-footer（components/diy-footer/diy-footer.vue），配色/图标来自后端 `get_config('app_tabbar')` DIY 配置。前端只有兜底默认色（已改墨黑/御金）。**要让 tabbar 真正龙珠阁化需在后端 DIY 后台配置图标与色值**——列为运营侧事项，不阻塞前端走查。
 - diy-footer.vue:120 存在既有表达式优先级问题（'color:'+x || fallback 恒取左侧），兜底色实际难触达——属业务逻辑，铁律禁改，仅记录。

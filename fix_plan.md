@@ -17,7 +17,7 @@
 ## P1 — 核心链路逐页走查（首页→商品→兑换→个人中心）
 
 - [x] **P1-1 全局导航与 tabbar**：pages.json 全部导航已纯白+黑字（审计确认，0 违规）；nav-back 自绘返回条白底 ✅；tabbar=component-diy-footer（后端 DIY 配置驱动配色），前端兜底默认色改墨黑 #1a1a1a/御金选中 #b99359；footer 无描边无投影 ✅。
-- [ ] **P1-2 排印基建**：全局引入思源宋体 font-family 工具类（`.font-serif`、「」section 标题样式、价格 `¥:xxxx 元` 格式样式类）到 longzhuge.css；≥14px 才用宋体的注释说明。
+- [x] **P1-2 排印基建**：longzhuge.css 已含 .lz-serif/.lz-title/.lz-section-title(「」)/.lz-price(¥: 元)/.lz-price-num/.lz-num-hero/.lz-series-name + ≥14px 注释；本轮补 .lz-nav-title（宋体居中导航标题）与 .lz-desc（说明文字层级，与主标题 ≥1.8:1）。
 - [ ] **P1-3 pages/index（首页/积分商城）走查**：圆角≤2px、去投影、去卡片描边、图占屏出血、overlay 压暗渐变、主标题宋体 40-44px、单屏≤3 信息组。
 - [ ] **P1-4 pages/user（个人中心）走查**：user.css 金渐变已在 P0-3 清；本轮处理圆角/投影/描边/排印/价格格式。
 - [ ] **P1-5 pages/plugins/points/index（兑换中心）走查**：index.css 渐变、圆角、卡片盒子去框化、积分大数字宋体 56-64px。
