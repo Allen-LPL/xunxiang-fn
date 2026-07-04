@@ -395,7 +395,7 @@
                     {
                         text: this.$t('common.del'),
                         style: {
-                            backgroundColor: '#E64340',
+                            backgroundColor: '#9E2B22',
                         },
                     },
                 ],

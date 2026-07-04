@@ -39,6 +39,11 @@ grep -rniE '#dddddd|#ddd\b' common components/cart pages/user-address pages/plug
 
 ## 下轮注意
 
-- 下一项任务：**P0-2 清除微信红系 3 处活代码**（page.css:596、cart.vue:398 js 色值字符串、goods-comment.css:35）→ #9E2B22。
+- 下一项任务：**P0-3 清除金色渐变 7 处 → 驼金平涂 #BE8F5B**（goods-search:55、faq:255、paytips:59,123、exchange-success:50,86、user:53）。
 - token 文件已就绪：`common/css/longzhuge.css`，页面可直接用 `var(--seal-red)` 等变量与 `.lz-*` 工具类（nvue 除外）。
 - `.lz-price` 用 ::before/::after 生成 `¥:` 与 ` 元`，模板侧只放数字即可；小程序 wxss 支持伪元素 content。
+
+## 遗留观察（走查对应页面时处理，勿忘）
+
+- 微信绿 #1AAD19：`common/css/page.css` .bg-green、`components/cart/cart.vue:392` 滑动"移入收藏"按钮 —— 属促销感/微信系色，P1-13 购物车走查时统一处理。
+- `pages/goods-comment/goods-comment.css` 进度条还有荧光蓝 #0e90d2/#3bb4f2、橙 #F37B1D —— 冷色/荧光违规，需在商品评论相关走查时收敛为墨黑/驼金系（可并入 P1-7 或单列）。
