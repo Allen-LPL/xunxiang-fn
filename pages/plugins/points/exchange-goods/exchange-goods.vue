@@ -11,7 +11,7 @@
                     <image class="eg-img" :src="item.images" mode="aspectFill"></image>
                     <view class="eg-info flex-1">
                         <view class="eg-goods-title multi-text">{{ item.title }}</view>
-                        <view class="eg-tag">礼品券兑换</view>
+                        <view class="eg-tag">礼品券兑换<text v-if="(item.exchange_num || 1) > 1"> ×{{ item.exchange_num }}件</text></view>
                     </view>
                     <view class="eg-btn tc" :data-value="item.goods_url" @tap.stop="goods_event">去下单</view>
                 </view>
