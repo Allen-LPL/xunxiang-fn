@@ -54,3 +54,4 @@
 ### 统计
 - 24 轮迭代，23 次提交（含 baseline），0 次业务逻辑改动，0 新增依赖。
 - 验证方式：静态 grep 断言（本项目无 npm 构建，HBuilderX 工程）+ 逐项修改前→后记录。
+| 2026-07-06 | 25(追加) | 用户指定走查：goods-detail 下单弹窗(components/goods-buy) + 下单页(pages/buy) | components/goods-buy/goods-buy.vue、pages/buy/buy.css | 修改前→后：规格钮 #f5f5f5/#ccc→#fbfaf7/#e8e4dc、不可选描边 #ebeaea/#d5d5d5→#e8e4dc、步进器 #eee→#f1eee8（选中态走 bg-main 已印章红✅，弹窗容器 radius 0✅）；buy 页拼团标签荧光蓝 #3bb4f2→御金、扩展项虚线 #ffe2cf→#f1eee8、提示橙 #ff8f44/#F37B1D→印章红、券提示 #f7b240→御金、门店价 #D2364C→印章红、禁用态 #dfdfdf/#c0c0c0→#f1eee8/#b4b3b3、促销角标不对称圆角→直角。断言：两文件禁止色/渐变/投影=0。坑复现：buy.css 混合行尾，多行 python 替换失效，改逐行 sed |
